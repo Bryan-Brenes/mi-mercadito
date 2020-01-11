@@ -1,0 +1,58 @@
+.contenedor-carrito {
+    margin-top: 56px;
+    padding: 0 10%;
+    padding-top: 40px;
+}
+
+.titulo-tabla {
+    margin-bottom: 10px;
+}
+
+.tabla {
+    max-height: 60vh;
+    overflow-y: auto;
+    scroll-behavior: auto;
+}
+
+.table .estilo-fila {
+    background-color: #c7ba8e;
+    border-radius: 8px !important;
+    margin: 5px 0;
+}
+
+.titulo-columna {
+    font-weight: bold;
+}
+
+.centrar {
+    text-align: center;
+}
+
+#direccion {
+    resize: none;
+}
+
+.contenedor-formulario {
+    margin: 15px 0;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    width: 100%;
+}
+
+.contenedor-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 45px !important;
+}
+
+.total-text {
+    width: 150px;
+    display: inline-block;
+}

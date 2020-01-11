@@ -5,6 +5,7 @@ import { RegistroComponent } from './controlAcceso/registro/registro.component';
 import { RegistroComercianteComponent } from './controlAcceso/registro-comerciante/registro-comerciante.component';
 import { NavbarClienteComponent } from './cliente/navbar-cliente/navbar-cliente.component';
 import { NavbarCarritoClienteComponent } from './cliente/navbar-carrito-cliente/navbar-carrito-cliente.component';
+import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'registroComprador', component: RegistroComponent },
   { path: 'registroComerciante', component: RegistroComercianteComponent },
   { path: 'cliente', component: NavbarClienteComponent },
-  { path: 'carrito', component: NavbarCarritoClienteComponent }
+  { path: 'carrito', component: CarritoClienteComponent }
 ];
 
 @NgModule({

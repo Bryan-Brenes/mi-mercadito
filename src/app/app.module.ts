@@ -9,6 +9,8 @@ import { RegistroComercianteComponent } from './controlAcceso/registro-comercian
 import { NavbarClienteComponent } from './cliente/navbar-cliente/navbar-cliente.component';
 import { NavbarCarritoClienteComponent } from './cliente/navbar-carrito-cliente/navbar-carrito-cliente.component';
 import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.component';
+import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
+import { ItemCarritoComponent } from './cliente/item-carrito/item-carrito.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,10 @@ import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.
     RegistroComponent,
     RegistroComercianteComponent,
     NavbarClienteComponent,
+    PerfilClienteComponent,
     NavbarCarritoClienteComponent,
-    PerfilClienteComponent
+    CarritoClienteComponent,
+    ItemCarritoComponent
   ],
   imports: [
     BrowserModule,

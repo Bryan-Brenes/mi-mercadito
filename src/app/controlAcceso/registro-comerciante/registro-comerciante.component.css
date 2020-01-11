@@ -95,3 +95,10 @@ span.p-label {
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media (max-width: 991px) {
+    .alerta {
+        width: 90%;
+        z-index: 3;
+    }
+}

@@ -1,0 +1,36 @@
+div.contenedor.row {
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #c7ba8e;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 12px !important;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor:hover {
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 12px -0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.centrar {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.alinear-derecha {
+    text-align: right;
+}

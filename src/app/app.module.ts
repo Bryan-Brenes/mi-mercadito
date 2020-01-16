@@ -15,6 +15,8 @@ import { NavbarComercianteComponent } from './comerciante/navbar-comerciante/nav
 import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
 import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item-factura-cliente.component';
+import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
+import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item
     PagoClienteComponent,
     FacturacionClienteComponent,
     ItemFacturaClienteComponent,
+    MisPedidosClienteComponent,
+    ItemPedidosComponent,
   ],
   imports: [
     BrowserModule,

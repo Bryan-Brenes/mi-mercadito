@@ -9,6 +9,7 @@ import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
+import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'cliente/carrito', component: CarritoClienteComponent },
   { path: 'cliente/metodoPago', component: PagoClienteComponent },
   { path: 'cliente/facturacion', component: FacturacionClienteComponent },
+  { path: 'cliente/misPedidos', component: MisPedidosClienteComponent },
 ];
 
 @NgModule({

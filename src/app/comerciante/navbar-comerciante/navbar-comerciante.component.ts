@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-comerciante',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-comerciante.component.css']
 })
 export class NavbarComercianteComponent implements OnInit {
+
+  @Input() nombre: string;
 
   constructor() { }
 

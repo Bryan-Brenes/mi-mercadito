@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'cliente/metodoPago', component: PagoClienteComponent },
   { path: 'cliente/facturacion', component: FacturacionClienteComponent },
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent},
-  { path: 'cliente/verProducto', component: BuscarProductosClienteComponent },
+  { path: 'cliente/buscarProducto', component: BuscarProductosClienteComponent },
 ];
 
 @NgModule({

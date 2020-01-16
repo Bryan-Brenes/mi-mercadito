@@ -9,6 +9,7 @@ import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 import { VerPuestosClienteComponent } from './cliente/ver-puestos-cliente/ver-puestos-cliente.component';
 import { BuscarProductosClienteComponent } from './cliente/buscar-productos-cliente/buscar-productos-cliente.component';
+import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 
 
 
@@ -19,7 +20,9 @@ const routes: Routes = [
   { path: 'cliente', component: PerfilClienteComponent },
   { path: 'carrito', component: CarritoClienteComponent },
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent},
+  { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent},
   { path: 'cliente/verProducto', component: BuscarProductosClienteComponent },
+
 ];
 
 @NgModule({

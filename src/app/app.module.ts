@@ -14,6 +14,7 @@ import { ItemCarritoComponent } from './cliente/item-carrito/item-carrito.compon
 import { VerPuestosClienteComponent } from './cliente/ver-puestos-cliente/ver-puestos-cliente.component';
 import { ItemCuadriculaComponent } from './cliente/item-cuadricula/item-cuadricula.component';
 import { BuscarProductosClienteComponent } from './cliente/buscar-productos-cliente/buscar-productos-cliente.component';
+import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BuscarProductosClienteComponent } from './cliente/buscar-productos-clie
     ItemCarritoComponent,
     VerPuestosClienteComponent,
     ItemCuadriculaComponent,
-    BuscarProductosClienteComponent
+    BuscarProductosClienteComponent,
+    VerDetallePuestoClienteComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,6 @@ import { NavbarCarritoClienteComponent } from './cliente/navbar-carrito-cliente/
 import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.component';
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 
-
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'registroComprador', component: RegistroComponent },

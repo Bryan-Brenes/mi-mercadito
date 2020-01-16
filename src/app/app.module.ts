@@ -35,7 +35,6 @@ import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/per
     PagoClienteComponent,
     FacturacionClienteComponent,
     ItemFacturaClienteComponent,
-    ItemCarritoComponent,
     VerPuestosClienteComponent,
     ItemCuadriculaComponent,
     BuscarProductosClienteComponent,

@@ -1,0 +1,20 @@
+.contenedorPrincipal {
+    margin-top: 100px;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+    padding-left: 60px;
+    margin: 0 auto;
+}
+
+@media (max-width:400px) {
+    .cuadricula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+}

@@ -13,6 +13,8 @@ import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-clien
 import { ItemCarritoComponent } from './cliente/item-carrito/item-carrito.component';
 import { NavbarComercianteComponent } from './comerciante/navbar-comerciante/navbar-comerciante.component';
 import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
+import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
+import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item-factura-cliente.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.compon
     ItemCarritoComponent,
     NavbarComercianteComponent,
     PagoClienteComponent,
+    FacturacionClienteComponent,
+    ItemFacturaClienteComponent,
   ],
   imports: [
     BrowserModule,

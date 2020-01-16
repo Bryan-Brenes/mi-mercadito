@@ -1,0 +1,38 @@
+.contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.divisor {
+    overflow: hidden;
+    padding: 0 5px;
+    flex-grow: 1;
+}
+
+.nombre, .precio {
+    padding: 0 5px;
+}
+
+.nombre, .precio {
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.cantidad {
+    padding: 15px;
+}
+
+.precio {
+    width: 10%;
+}
+
+@media (max-width: 852px) {
+    .divisor {
+        display: none;
+    }
+    .precio {
+        text-align: right;
+        flex-grow: 1;
+    }
+}

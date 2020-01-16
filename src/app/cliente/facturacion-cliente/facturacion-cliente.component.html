@@ -1,0 +1,34 @@
+<app-navbar-carrito-cliente pagina="facturacion"></app-navbar-carrito-cliente>
+
+<div class="contenedor">
+    <h1 class="titulo">Productos adquiridos</h1>
+    <div class="linea"></div>
+    <div class="itemes">
+        <app-item-factura-cliente *ngFor="let item of itemes" nombre="{{item.nombre}}" cantidad="{{item.cantidad}}"
+            precio="{{item.precio}}">
+        </app-item-factura-cliente>
+    </div>
+    <div class="linea"></div>
+    <app-item-factura-cliente cantidad="" nombre="Sub-total" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Cargo por servicio" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Cargo por envio" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Total" precio="7580"></app-item-factura-cliente>
+
+    <div class="row contenedor-envio">
+        <label class="col-sm-12" for="correo">Enviar por correo</label>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <input type="email" class="form-control" id="correo" aria-describedby="correo para envio"
+                    placeholder="Correo electrónico">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-primario">Enviar factura</button>
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-secundario">Volver</button>
+        </div>
+    </div>
+</div>

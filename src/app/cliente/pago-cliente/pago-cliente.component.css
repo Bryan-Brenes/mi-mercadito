@@ -1,0 +1,53 @@
+.contenedor-pago {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.contenido {
+    background-color: #C7BA8E;
+    border-radius: 8px;
+    width: 60%;
+    padding: 30px;
+    position: relative;
+    padding-top: 150px;
+}
+
+.imagen-tarjeta {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    width: 100%;
+}
+
+@media (max-width: 1020px) {
+    .imagen-tarjeta {
+        width: 50vw;
+        position: absolute;
+    }
+    .contenido {
+        background-color: #C7BA8E;
+        border-radius: 8px;
+        width: 80%;
+        padding: 30px;
+        position: relative;
+        padding-top: 80px;
+    }
+    .contenedor-pago {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+    }
+    select {
+        margin-bottom: 10px;
+    }
+}

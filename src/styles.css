@@ -9,3 +9,13 @@
     color: #f2f2f2;
     background-color: #116b3f;
 }
+
+.btn-secundario {
+    background-color: #60574E;
+    color: #f2f2f2;
+}
+
+.btn-secundario:hover {
+    color: #f2f2f2;
+    background-color: #60473E;
+}

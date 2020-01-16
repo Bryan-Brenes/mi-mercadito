@@ -12,6 +12,7 @@ import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 import { ItemCarritoComponent } from './cliente/item-carrito/item-carrito.component';
 import { NavbarComercianteComponent } from './comerciante/navbar-comerciante/navbar-comerciante.component';
+import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NavbarComercianteComponent } from './comerciante/navbar-comerciante/nav
     CarritoClienteComponent,
     ItemCarritoComponent,
     NavbarComercianteComponent,
+    PagoClienteComponent,
   ],
   imports: [
     BrowserModule,

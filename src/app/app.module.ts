@@ -11,6 +11,9 @@ import { NavbarCarritoClienteComponent } from './cliente/navbar-carrito-cliente/
 import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.component';
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 import { ItemCarritoComponent } from './cliente/item-carrito/item-carrito.component';
+import { VerPuestosClienteComponent } from './cliente/ver-puestos-cliente/ver-puestos-cliente.component';
+import { ItemCuadriculaComponent } from './cliente/item-cuadricula/item-cuadricula.component';
+import { BuscarProductosClienteComponent } from './cliente/buscar-productos-cliente/buscar-productos-cliente.component';
 import { NavbarComercianteComponent } from './comerciante/navbar-comerciante/navbar-comerciante.component';
 import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
@@ -31,6 +34,10 @@ import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item
     PagoClienteComponent,
     FacturacionClienteComponent,
     ItemFacturaClienteComponent,
+    ItemCarritoComponent,
+    VerPuestosClienteComponent,
+    ItemCuadriculaComponent,
+    BuscarProductosClienteComponent
   ],
   imports: [
     BrowserModule,

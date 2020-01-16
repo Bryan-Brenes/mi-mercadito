@@ -9,6 +9,9 @@ import { PerfilClienteComponent } from './cliente/perfil-cliente/perfil-cliente.
 import { CarritoClienteComponent } from './cliente/carrito-cliente/carrito-cliente.component';
 import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.component';
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
+import { VerPuestosClienteComponent } from './cliente/ver-puestos-cliente/ver-puestos-cliente.component';
+import { BuscarProductosClienteComponent } from './cliente/buscar-productos-cliente/buscar-productos-cliente.component';
+
 
 
 const routes: Routes = [
@@ -19,6 +22,8 @@ const routes: Routes = [
   { path: 'cliente/carrito', component: CarritoClienteComponent },
   { path: 'cliente/metodoPago', component: PagoClienteComponent },
   { path: 'cliente/facturacion', component: FacturacionClienteComponent },
+  { path: 'cliente/verPuesto', component: VerPuestosClienteComponent},
+  { path: 'cliente/verProducto', component: BuscarProductosClienteComponent },
 ];
 
 @NgModule({

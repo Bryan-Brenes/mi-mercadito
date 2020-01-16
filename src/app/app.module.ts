@@ -21,6 +21,7 @@ import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item
 import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/perfil-comerciante.component';
 import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
 import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.component';
+import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.compon
     PerfilComercianteComponent,
     MisPedidosClienteComponent,
     ItemPedidosComponent
+    VerDetallePuestoClienteComponent
   ],
   imports: [
     BrowserModule,

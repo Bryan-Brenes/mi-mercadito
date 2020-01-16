@@ -44,8 +44,8 @@ import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-c
     BuscarProductosClienteComponent,
     PerfilComercianteComponent,
     MisPedidosClienteComponent,
-    ItemPedidosComponent
-    VerDetallePuestoClienteComponent
+    ItemPedidosComponent,
+    VerDetallePuestoClienteComponent,
   ],
   imports: [
     BrowserModule,

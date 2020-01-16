@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'cliente/misPedidos', component: MisPedidosClienteComponent },
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent },
   { path: 'cliente/buscarProducto', component: BuscarProductosClienteComponent },
-  { path: 'comerciante', component: PerfilComercianteComponent }
+  { path: 'comerciante', component: PerfilComercianteComponent },
   { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent},
 ];
 

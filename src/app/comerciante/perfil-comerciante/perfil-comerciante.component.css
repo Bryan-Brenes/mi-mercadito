@@ -1,0 +1,47 @@
+.contenedorPrincipal {
+    margin-top: 100px;
+}
+
+.columnaDerecha {
+    margin-left: 0;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width:575px) {
+    .columnaDerecha {
+        margin: 0 15px;
+    }
+}
+
+.columnaIzquierda {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+
+.perfilImagen {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid green; */
+    margin: 20px 0;
+    margin-right: 0;
+    border-radius: 8px;
+}
+
+.letraNombre {
+    color: #60574E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+i {
+    color: #60574E;
+}
+
+span {
+    padding-left: 5px;
+    color: #60574E;
+}

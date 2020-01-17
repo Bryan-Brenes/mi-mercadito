@@ -1,0 +1,17 @@
+<app-navbar-cliente nombre="Rodrigo Zúñiga"></app-navbar-cliente>
+
+<div class="contenedor">
+    <h1 class="titulo">Productos adquiridos</h1>
+    <div class="linea"></div>
+    <div class="itemes">
+        <app-item-factura-cliente *ngFor="let item of itemes" nombre="{{item.nombre}}" cantidad="{{item.cantidad}}"
+            precio="{{item.precio}}">
+        </app-item-factura-cliente>
+    </div>
+    <div class="linea"></div>
+    <app-item-factura-cliente cantidad="" nombre="Sub-total" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Cargo por servicio" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Cargo por envio" precio="7580"></app-item-factura-cliente>
+    <app-item-factura-cliente cantidad="" nombre="Total" precio="7580"></app-item-factura-cliente>
+
+</div>

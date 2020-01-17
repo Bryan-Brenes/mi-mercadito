@@ -22,6 +22,7 @@ import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/per
 import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
 import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.component';
 import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
+import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-c
     MisPedidosClienteComponent,
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
+    DetalleCompraClienteComponent,
   ],
   imports: [
     BrowserModule,

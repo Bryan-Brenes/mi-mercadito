@@ -20,6 +20,7 @@ import { PedidosHacerRepartidorComponent } from './repartidor/pedidos-hacer-repa
 import { InventarioComercianteComponent } from "./comerciante/inventario-comerciante/inventario-comerciante.component";
 import { DescripcionProductoComercianteComponent } from "./comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component";
 import { AgregarProductoComercianteComponent } from "./comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component";
+import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'comerciante/agregarProducto', component: AgregarProductoComercianteComponent },
   { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
   { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },
+  { path: 'repartidor/detallesPedido', component: DetallesPedidosRepartidorComponent },
 ];
 
 @NgModule({

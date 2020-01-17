@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventarioComercianteComponent implements OnInit {
 
+  nombre: string = "Productos Fresquita";
+  productos: Object[];
+
   constructor() { }
 
   ngOnInit() {
+    this.productos = this.obtenerProductos();
   }
 
+  private obtenerProductos(): Object[] {
+    var productos = [];
+    for (let i = 0; i < 10; i++) {
+      productos.push({
+        nombre: "Tomate"
+      })
+    }
+    return productos;
+  }
 }

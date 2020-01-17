@@ -29,6 +29,9 @@ import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/
 import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
 import { PedidosHacerRepartidorComponent } from './repartidor/pedidos-hacer-repartidor/pedidos-hacer-repartidor.component';
 import { ItemPedidoRepartidorComponent } from './repartidor/item-pedido-repartidor/item-pedido-repartidor.component';
+import { ItemProductosComponent } from './comerciante/item-productos/item-productos.component';
+import { DescripcionProductoComercianteComponent } from './comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component';
+import { AgregarProductoComercianteComponent } from './comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component';
 
 @NgModule({
   declarations: [
@@ -57,8 +60,11 @@ import { ItemPedidoRepartidorComponent } from './repartidor/item-pedido-repartid
     NavbarAdministradorComponent
     InventarioComercianteComponent,
     DetalleCompraClienteComponent,
-    PedidosHacerRepartidorComponent,
     ItemPedidoRepartidorComponent
+    PedidosHacerRepartidorComponent,
+    ItemProductosComponent,
+    DescripcionProductoComercianteComponent,
+    AgregarProductoComercianteComponent
   ],
   imports: [
     BrowserModule,

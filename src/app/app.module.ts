@@ -23,6 +23,7 @@ import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pe
 import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.component';
 import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 import { ItemComentarioComponent } from './comerciante/item-comentario/item-comentario.component';
+import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ItemComentarioComponent } from './comerciante/item-comentario/item-come
     MisPedidosClienteComponent,
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
-    ItemComentarioComponent
+    ItemComentarioComponent,
+    InventarioComercianteComponent
   ],
   imports: [
     BrowserModule,

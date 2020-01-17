@@ -38,6 +38,10 @@ import { AgregarProductoMiPuestoComercianteComponent } from './comerciante/agreg
 import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 import { NavBarRepartidorComponent } from './repartidor/nav-bar-repartidor/nav-bar-repartidor.component';
 import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repartidor/item-producto-repartidor.component';
+import { MisEncargosComponent } from './comerciante/mis-encargos/mis-encargos.component';
+import { ItemPedidoComercianteComponent } from './comerciante/item-pedido-comerciante/item-pedido-comerciante.component';
+import { DetallePedidoComercianteComponent } from './comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component';
+import { ItemProductoComercianteComponent } from './comerciante/item-producto-comerciante/item-producto-comerciante.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +81,10 @@ import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repa
     DetallesPedidosRepartidorComponent,
     NavBarRepartidorComponent,
     ItemProductoRepartidorComponent,
+    MisEncargosComponent,
+    ItemPedidoComercianteComponent,
+    DetallePedidoComercianteComponent,
+    ItemProductoComercianteComponent,
   ],
   imports: [
     BrowserModule,

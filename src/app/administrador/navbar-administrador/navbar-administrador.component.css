@@ -1,0 +1,29 @@
+.contenedor-derecho {
+    float: right;
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+    .contenedor-derecho {
+        position: absolute;
+        top: 12px;
+        right: 90px;
+    }
+    .nombre-administrador {
+        display: none;
+    }
+}
+
+.bg-green {
+    background-color: #E65300;
+}
+
+.imagen-administrador {
+    width: 28px;
+    border-radius: 50%;
+}
+
+.nombre-administrador {
+    margin-left: 15px;
+    color: #f2f2f2
+}

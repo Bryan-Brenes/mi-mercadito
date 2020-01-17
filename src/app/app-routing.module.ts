@@ -17,6 +17,8 @@ import { PerfilComercianteComponent } from "./comerciante/perfil-comerciante/per
 import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
 import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
+import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -34,6 +36,7 @@ const routes: Routes = [
   { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent },
   { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
   { path: 'administrador/listaRepartidores', component: ListarepartidoresComponent },
+  { path: 'administrador/agregarRepartidor', component: AgregarRepartidorComponent },
 ];
 
 @NgModule({

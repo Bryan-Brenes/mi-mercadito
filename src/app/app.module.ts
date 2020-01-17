@@ -28,6 +28,7 @@ import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/
 import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
 import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
 import { ItemRepartidoresComponent } from './administrador/item-repartidores/item-repartidores.component';
+import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { ItemRepartidoresComponent } from './administrador/item-repartidores/ite
     NavbarAdministradorComponent,
     ListarepartidoresComponent,
     ItemRepartidoresComponent,
+    AgregarRepartidorComponent,
   ],
   imports: [
     BrowserModule,

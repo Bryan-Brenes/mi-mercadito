@@ -9,7 +9,7 @@ div.contenedor.row {
 .contenedor {
     background-color: #c7ba8e;
     padding: 1rem;
-    width: 100%;
+    width: 102%;
     margin-bottom: 12px !important;
     border-radius: 8px;
     -webkit-box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
@@ -54,6 +54,6 @@ a:hover {
 
 .imagen-editar, .imagen-eliminar {
     position: relative;
-    left: 600%;
+    left: 260px;
     margin: 20px 10px 0 0;
 }

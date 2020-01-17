@@ -1,0 +1,32 @@
+.contenedor-derecho {
+    float: right;
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+    .contenedor-derecho {
+        position: absolute;
+        top: 12px;
+        right: 90px;
+    }
+    .nombre-usuario {
+        display: none;
+    }
+    i.fas {
+        display: none;
+    }
+}
+
+.bg-azul {
+    background-color: #008aea;
+}
+
+.imagen-usuario {
+    width: 28px;
+    border-radius: 50%;
+}
+
+.nombre-usuario {
+    margin-left: 15px;
+    color: #f2f2f2
+}

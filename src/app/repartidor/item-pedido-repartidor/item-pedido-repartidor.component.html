@@ -1,0 +1,12 @@
+<div class="contendor" [ngClass]="{'bg-completado': completado == true}">
+    <div class="form-check">
+        <input [(ngModel)]="completado" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+            {{fecha}}
+        </label>
+    </div>
+    <span class="nombre">{{nombre}}</span>
+    <div class="separador"></div>
+    <span *ngIf="enviar == 'si'"><i class="fas fa-truck iconoCamion"></i></span>
+    <a href="#"><i class="fas fa-list-alt"></i></a>
+</div>

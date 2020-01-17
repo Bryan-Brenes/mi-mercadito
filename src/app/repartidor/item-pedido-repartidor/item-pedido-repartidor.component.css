@@ -1,0 +1,40 @@
+.contendor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: #CF3636;
+    border-radius: 8px;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+}
+
+.bg-completado {
+    background-color: #1F6B3F !important;
+}
+
+.separador {
+    flex-grow: 1;
+}
+
+label {
+    padding-left: 7px;
+}
+
+.nombre {
+    display: block;
+    padding-left: 15px;
+}
+
+.iconoCamion {
+    margin-right: 15px;
+}
+
+a {
+    color: #f2f2f2;
+    margin-left: 5px;
+}
+
+a:hover {
+    color: #ddd;
+}

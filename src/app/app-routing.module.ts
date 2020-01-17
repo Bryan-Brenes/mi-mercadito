@@ -16,11 +16,13 @@ import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pe
 import { PerfilComercianteComponent } from "./comerciante/perfil-comerciante/perfil-comerciante.component";
 import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
+import { PedidosHacerRepartidorComponent } from './repartidor/pedidos-hacer-repartidor/pedidos-hacer-repartidor.component';
 import { InventarioComercianteComponent } from "./comerciante/inventario-comerciante/inventario-comerciante.component";
 import { DescripcionProductoComercianteComponent } from "./comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component";
 import { AgregarProductoComercianteComponent } from "./comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component";
 import { MiPuestoComercianteComponent } from "./comerciante/mi-puesto-comerciante/mi-puesto-comerciante.component";
 import { AgregarProductoMiPuestoComercianteComponent } from "./comerciante/agregar-producto-mi-puesto-comerciante/agregar-producto-mi-puesto-comerciante.component";
+import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -41,6 +43,8 @@ const routes: Routes = [
   { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
   { path: 'comerciante/miPuesto', component: MiPuestoComercianteComponent },
   { path: 'comerciante/agregarProductoMiPuesto', component: AgregarProductoMiPuestoComercianteComponent },
+  { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },
+  { path: 'repartidor/detallesPedido', component: DetallesPedidosRepartidorComponent },
 ];
 
 @NgModule({

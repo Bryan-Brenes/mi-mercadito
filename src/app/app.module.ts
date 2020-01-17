@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,12 +27,17 @@ import { ItemComentarioComponent } from './comerciante/item-comentario/item-come
 import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
 import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
+import { PedidosHacerRepartidorComponent } from './repartidor/pedidos-hacer-repartidor/pedidos-hacer-repartidor.component';
+import { ItemPedidoRepartidorComponent } from './repartidor/item-pedido-repartidor/item-pedido-repartidor.component';
 import { ItemProductosComponent } from './comerciante/item-productos/item-productos.component';
 import { DescripcionProductoComercianteComponent } from './comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component';
 import { AgregarProductoComercianteComponent } from './comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component';
 import { MiPuestoComercianteComponent } from './comerciante/mi-puesto-comerciante/mi-puesto-comerciante.component';
 import { ItemProductoComponent } from './comerciante/item-producto/item-producto.component';
 import { AgregarProductoMiPuestoComercianteComponent } from './comerciante/agregar-producto-mi-puesto-comerciante/agregar-producto-mi-puesto-comerciante.component';
+import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
+import { NavBarRepartidorComponent } from './repartidor/nav-bar-repartidor/nav-bar-repartidor.component';
+import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repartidor/item-producto-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -56,19 +62,26 @@ import { AgregarProductoMiPuestoComercianteComponent } from './comerciante/agreg
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
-    InventarioComercianteComponent,
     DetalleCompraClienteComponent,
     NavbarAdministradorComponent,
+    InventarioComercianteComponent,
+    DetalleCompraClienteComponent,
+    ItemPedidoRepartidorComponent,
+    PedidosHacerRepartidorComponent,
     ItemProductosComponent,
     DescripcionProductoComercianteComponent,
     AgregarProductoComercianteComponent,
     MiPuestoComercianteComponent,
     ItemProductoComponent,
-    AgregarProductoMiPuestoComercianteComponent
+    AgregarProductoMiPuestoComercianteComponent,
+    DetallesPedidosRepartidorComponent,
+    NavBarRepartidorComponent,
+    ItemProductoRepartidorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

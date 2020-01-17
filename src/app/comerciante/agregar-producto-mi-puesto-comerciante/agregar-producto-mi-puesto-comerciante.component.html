@@ -1,0 +1,39 @@
+<app-navbar-comerciante nombre="Productos Fresquita"></app-navbar-comerciante>
+
+<div class="contenedor">
+    <div class="row">
+        <div class="contenedorImagen">
+            <img class="perfilImagen" src="../../../assets/tomate.png" alt="Producto" srcset="">
+        </div>
+        <div class="informacionProducto">
+            <h4>
+                Agregar producto a mi puesto
+            </h4>
+            <form class="formulario" action="#">
+                <div class="row">
+                    <div class="form-group col-sm-11">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-11">
+                        <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-11">
+                        <input type="text" class="form-control" id="montoxUnidad" placeholder="Monto por unidad">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-11">
+                        <input type="text" class="form-control" id="montoxKg" placeholder="Monto por Kg">
+                    </div>
+                </div>
+
+                <button type="button" onclick="window.location.href='comerciante/miPuesto'"
+                    class="btn btn-primario btn-comprar botonAgregar">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -29,6 +29,9 @@ import { NavbarAdministradorComponent } from './administrador/navbar-administrad
 import { ItemProductosComponent } from './comerciante/item-productos/item-productos.component';
 import { DescripcionProductoComercianteComponent } from './comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component';
 import { AgregarProductoComercianteComponent } from './comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component';
+import { MiPuestoComercianteComponent } from './comerciante/mi-puesto-comerciante/mi-puesto-comerciante.component';
+import { ItemProductoComponent } from './comerciante/item-producto/item-producto.component';
+import { AgregarProductoMiPuestoComercianteComponent } from './comerciante/agregar-producto-mi-puesto-comerciante/agregar-producto-mi-puesto-comerciante.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { AgregarProductoComercianteComponent } from './comerciante/agregar-produ
     NavbarAdministradorComponent,
     ItemProductosComponent,
     DescripcionProductoComercianteComponent,
-    AgregarProductoComercianteComponent
+    AgregarProductoComercianteComponent,
+    MiPuestoComercianteComponent,
+    ItemProductoComponent,
+    AgregarProductoMiPuestoComercianteComponent
   ],
   imports: [
     BrowserModule,

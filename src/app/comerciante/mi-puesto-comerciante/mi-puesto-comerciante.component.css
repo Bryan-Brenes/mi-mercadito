@@ -1,0 +1,47 @@
+.contenedor {
+    margin-top: 56px;
+    padding: 0 10%;
+    padding-top: 40px;
+}
+
+.titulo-tabla {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tabla {
+    max-height: 35vh;
+    overflow-y: auto;
+    scroll-behavior: auto;
+}
+
+.table .estilo-fila {
+    background-color: #c7ba8e;
+    border-radius: 8px !important;
+    margin: 5px 0;
+}
+
+.titulo-columna {
+    font-weight: bold;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.boton {
+    margin-left: 9vh;
+}
+
+.imagenComercio {
+    align-content: center;
+    text-align: center;
+}
+.perfilImagen {
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid green; */
+    margin: 20px 0;
+    margin-right: 0;
+    border-radius: 8px;
+}

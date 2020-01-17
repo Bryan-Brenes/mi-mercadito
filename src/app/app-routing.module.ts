@@ -16,6 +16,9 @@ import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pe
 import { PerfilComercianteComponent } from "./comerciante/perfil-comerciante/perfil-comerciante.component";
 import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
+import { InventarioComercianteComponent } from "./comerciante/inventario-comerciante/inventario-comerciante.component";
+import { DescripcionProductoComercianteComponent } from "./comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component";
+import { AgregarProductoComercianteComponent } from "./comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -29,8 +32,10 @@ const routes: Routes = [
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent },
   { path: 'cliente/buscarProducto', component: BuscarProductosClienteComponent },
   { path: 'comerciante', component: PerfilComercianteComponent },
-  { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
   { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent },
+  { path: 'comerciante/verInventario', component: InventarioComercianteComponent },
+  { path: 'comerciante/verDescripcionProducto', component: DescripcionProductoComercianteComponent },
+  { path: 'comerciante/agregarProducto', component: AgregarProductoComercianteComponent },
   { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
 ];
 

@@ -26,6 +26,9 @@ import { ItemComentarioComponent } from './comerciante/item-comentario/item-come
 import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
 import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
+import { ItemProductosComponent } from './comerciante/item-productos/item-productos.component';
+import { DescripcionProductoComercianteComponent } from './comerciante/descripcion-producto-comerciante/descripcion-producto-comerciante.component';
+import { AgregarProductoComercianteComponent } from './comerciante/agregar-producto-comerciante/agregar-producto-comerciante.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +53,12 @@ import { NavbarAdministradorComponent } from './administrador/navbar-administrad
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
+    InventarioComercianteComponent,
     DetalleCompraClienteComponent
     NavbarAdministradorComponent
+    ItemProductosComponent,
+    DescripcionProductoComercianteComponent,
+    AgregarProductoComercianteComponent
   ],
   imports: [
     BrowserModule,

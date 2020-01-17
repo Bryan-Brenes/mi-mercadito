@@ -25,6 +25,7 @@ import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-c
 import { ItemComentarioComponent } from './comerciante/item-comentario/item-comentario.component';
 import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
+import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +50,8 @@ import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
-    InventarioComercianteComponent,
     DetalleCompraClienteComponent
+    NavbarAdministradorComponent
   ],
   imports: [
     BrowserModule,

@@ -29,6 +29,7 @@ const routes: Routes = [
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent },
   { path: 'cliente/buscarProducto', component: BuscarProductosClienteComponent },
   { path: 'comerciante', component: PerfilComercianteComponent },
+  { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
   { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent },
   { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
 ];

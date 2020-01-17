@@ -12,7 +12,7 @@ export class DetallesPedidosRepartidorComponent implements OnInit {
   fechaNacimiento: string = "15-10-1989";
   telefono: string = "8745-1523";
   correo: string = "rodrigoZC2@gmail.com";
-  ubicacion: string ="De la escuela de paraiso 20 m este y 8 m sur, Paraíso, Cartago   Province, Costa Rica";
+  ubicacion: string = "De la escuela de paraiso 20 m este y 8 m sur, Paraíso, Cartago   Province, Costa Rica";
 
   constructor() { }
 

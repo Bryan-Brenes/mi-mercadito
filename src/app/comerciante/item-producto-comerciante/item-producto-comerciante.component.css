@@ -1,0 +1,31 @@
+div.contenedor.row {
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #CF3636;
+    color: #f2f2f2;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 12px !important;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
+}
+
+.centrar {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #1f6b3f !important;
+}

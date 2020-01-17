@@ -23,6 +23,8 @@ import { AgregarProductoComercianteComponent } from "./comerciante/agregar-produ
 import { MiPuestoComercianteComponent } from "./comerciante/mi-puesto-comerciante/mi-puesto-comerciante.component";
 import { AgregarProductoMiPuestoComercianteComponent } from "./comerciante/agregar-producto-mi-puesto-comerciante/agregar-producto-mi-puesto-comerciante.component";
 import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
+import { MisEncargosComponent } from "./comerciante/mis-encargos/mis-encargos.component";
+import { DetallePedidoComercianteComponent } from "./comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -45,6 +47,8 @@ const routes: Routes = [
   { path: 'comerciante/agregarProductoMiPuesto', component: AgregarProductoMiPuestoComercianteComponent },
   { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },
   { path: 'repartidor/detallesPedido', component: DetallesPedidosRepartidorComponent },
+  { path: 'comerciante/misEncargos', component: MisEncargosComponent },
+  { path: 'comerciante/detallesPedido', component: DetallePedidoComercianteComponent },
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,8 @@ import { ItemComentarioComponent } from './comerciante/item-comentario/item-come
 import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
 import { NavbarAdministradorComponent } from './administrador/navbar-administrador/navbar-administrador.component';
+import { PedidosHacerRepartidorComponent } from './repartidor/pedidos-hacer-repartidor/pedidos-hacer-repartidor.component';
+import { ItemPedidoRepartidorComponent } from './repartidor/item-pedido-repartidor/item-pedido-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -52,10 +55,15 @@ import { NavbarAdministradorComponent } from './administrador/navbar-administrad
     ItemComentarioComponent,
     DetalleCompraClienteComponent
     NavbarAdministradorComponent
+    InventarioComercianteComponent,
+    DetalleCompraClienteComponent,
+    PedidosHacerRepartidorComponent,
+    ItemPedidoRepartidorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

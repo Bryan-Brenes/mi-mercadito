@@ -54,8 +54,8 @@ import { AgregarProductoComercianteComponent } from './comerciante/agregar-produ
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
     InventarioComercianteComponent,
-    DetalleCompraClienteComponent
-    NavbarAdministradorComponent
+    DetalleCompraClienteComponent,
+    NavbarAdministradorComponent,
     ItemProductosComponent,
     DescripcionProductoComercianteComponent,
     AgregarProductoComercianteComponent

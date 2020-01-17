@@ -37,11 +37,14 @@ import { ItemProductoComponent } from './comerciante/item-producto/item-producto
 import { AgregarProductoMiPuestoComercianteComponent } from './comerciante/agregar-producto-mi-puesto-comerciante/agregar-producto-mi-puesto-comerciante.component';
 import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 import { NavBarRepartidorComponent } from './repartidor/nav-bar-repartidor/nav-bar-repartidor.component';
-import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repartidor/item-producto-repartidor.component';
 import { MisEncargosComponent } from './comerciante/mis-encargos/mis-encargos.component';
+import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repartidor/item-producto-repartidor.component';
 import { ItemPedidoComercianteComponent } from './comerciante/item-pedido-comerciante/item-pedido-comerciante.component';
 import { DetallePedidoComercianteComponent } from './comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component';
 import { ItemProductoComercianteComponent } from './comerciante/item-producto-comerciante/item-producto-comerciante.component';
+import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
+import { ItemRepartidoresComponent } from './administrador/item-repartidores/item-repartidores.component';
+import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -73,8 +76,8 @@ import { ItemProductoComercianteComponent } from './comerciante/item-producto-co
     ItemPedidoRepartidorComponent,
     PedidosHacerRepartidorComponent,
     ItemProductosComponent,
-    DescripcionProductoComercianteComponent,
     AgregarProductoComercianteComponent,
+    DescripcionProductoComercianteComponent,
     MiPuestoComercianteComponent,
     ItemProductoComponent,
     AgregarProductoMiPuestoComercianteComponent,
@@ -85,6 +88,11 @@ import { ItemProductoComercianteComponent } from './comerciante/item-producto-co
     ItemPedidoComercianteComponent,
     DetallePedidoComercianteComponent,
     ItemProductoComercianteComponent,
+    DetalleCompraClienteComponent,
+    NavbarAdministradorComponent,
+    ListarepartidoresComponent,
+    ItemRepartidoresComponent,
+    AgregarRepartidorComponent,
   ],
   imports: [
     BrowserModule,

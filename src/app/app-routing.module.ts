@@ -25,6 +25,9 @@ import { AgregarProductoMiPuestoComercianteComponent } from "./comerciante/agreg
 import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 import { MisEncargosComponent } from "./comerciante/mis-encargos/mis-encargos.component";
 import { DetallePedidoComercianteComponent } from "./comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component";
+import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
+import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -49,6 +52,8 @@ const routes: Routes = [
   { path: 'repartidor/detallesPedido', component: DetallesPedidosRepartidorComponent },
   { path: 'comerciante/misEncargos', component: MisEncargosComponent },
   { path: 'comerciante/detallesPedido', component: DetallePedidoComercianteComponent },
+  { path: 'administrador/listaRepartidores', component: ListarepartidoresComponent },
+  { path: 'administrador/agregarRepartidor', component: AgregarRepartidorComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,73 @@
+<app-navbar-administrador nombre="Mario Garzón"></app-navbar-administrador>
+<div class="vea">
+    <div class="container-12">
+        <div class="container-img">
+            <div class="img-repartidor">
+                <img src="../../../assets/user-default.png" alt="">
+            </div>
+            <button class="btn btn-primario" type="button" id="button-addon1">
+                <a href="#"><img src="../../../assets/image-add-solid-24.png" alt="Agregar usuario"></a>
+                Agregar
+            </button>
+        </div>
+        <div class="container-info">
+            <form class="needs-validation" action="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder={{nombre}}>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder={{apellidos}}>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label for="email">Email</label>
+                        <div class="flex">
+                            <img src="../../../assets/bxs-envelope.svg" alt="logo email">
+                            <input type="email" class="form-control" id="email" placeholder={{correo}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-md-12 mb-3">
+                        <label for="telefono">Telefono</label>
+                        <div class="flex">
+                            <img src="../../../assets/bxs-phone-incoming.svg" alt="logo telefono">
+                            <input type="telefono" class="form-control" id="telefono" placeholder={{telefono}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="fecha-Nacimiento">Fecha Nacimiento</label>
+                        <input type="text" class="form-control" id="fecha-nacimiento" placeholder={{fecha}}>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">IBAN</label>
+                        <div class="flex">
+                            <img src="../../../assets/credit-card-solid-24.png" alt="Logo IBAN">
+                            <input type="text" class="form-control" id="cc-number" placeholder={{IBAN}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <div class="flex">
+                        <button class="btn btn-primario " type="submit" id="button-addon2">
+                            Guardar
+                        </button>
+                        <button class="btn btn-secundario" type="button" id="button-addon2"
+                            onclick="window.location.href='administrador/listaRepartidores'">
+                            <a class="bt-listaRepartidores" href="/administrador/listaRepartidores"></a>
+                            Volver
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

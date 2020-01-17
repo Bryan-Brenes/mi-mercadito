@@ -1,0 +1,32 @@
+.contenedor {
+    margin-top: 12vh;
+}
+
+.lista-repartidores {
+    margin-top: 15px;
+}
+
+.titulos-lista {
+    margin-top: 50px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.alinear-derecha {
+    text-align: right;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#button-addon2 {
+    left: 1092px;
+    position: absolute;
+}
+
+#button-addon1 {
+    left: 1088px;
+    position: absolute;
+}

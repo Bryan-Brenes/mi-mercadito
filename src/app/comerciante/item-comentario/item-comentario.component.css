@@ -1,0 +1,33 @@
+.contenedorPrincipal {
+    background: #C7BA8E;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 100px;
+    width: 980px;
+}
+
+.columnaDerecha {
+    padding-top: 10px;
+}
+
+@media (max-width:300px) {
+    .columnaDerecha {
+        margin: 0 15px;
+    }
+}
+
+
+.perfilImagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.contenedorComentarios {
+    background: rgba(199, 186, 142, 0.5);
+}
+
+.tabla {
+
+}

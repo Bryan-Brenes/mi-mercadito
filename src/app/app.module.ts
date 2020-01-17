@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,9 @@ import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-c
 import { ItemComentarioComponent } from './comerciante/item-comentario/item-comentario.component';
 import { InventarioComercianteComponent } from './comerciante/inventario-comerciante/inventario-comerciante.component';
 import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/detalle-compra-cliente.component';
+import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
+import { NavBarRepartidorComponent } from './repartidor/nav-bar-repartidor/nav-bar-repartidor.component';
+import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repartidor/item-producto-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -50,11 +54,15 @@ import { DetalleCompraClienteComponent } from './cliente/detalle-compra-cliente/
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
     InventarioComercianteComponent,
-    DetalleCompraClienteComponent
+    DetalleCompraClienteComponent,
+    DetallesPedidosRepartidorComponent,
+    NavBarRepartidorComponent,
+    ItemProductoRepartidorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

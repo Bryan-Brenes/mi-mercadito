@@ -56,15 +56,15 @@ import { AgregarProductoComercianteComponent } from './comerciante/agregar-produ
     ItemPedidosComponent,
     VerDetallePuestoClienteComponent,
     ItemComentarioComponent,
-    DetalleCompraClienteComponent
-    NavbarAdministradorComponent
+    DetalleCompraClienteComponent,
+    NavbarAdministradorComponent,
     InventarioComercianteComponent,
     DetalleCompraClienteComponent,
-    ItemPedidoRepartidorComponent
+    ItemPedidoRepartidorComponent,
     PedidosHacerRepartidorComponent,
     ItemProductosComponent,
     DescripcionProductoComercianteComponent,
-    AgregarProductoComercianteComponent
+    AgregarProductoComercianteComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@
 
 .columnaDerecha {
     margin-left: 0;
+    padding-left: 50px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -23,8 +24,8 @@
 }
 
 .perfilImagen {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     /* border: 1px solid green; */
     margin: 20px 0;
     margin-right: 0;
@@ -43,5 +44,25 @@ i {
 
 span {
     padding-left: 5px;
+    color: #60574E;
+}
+
+.tabla {
+    max-height: 32vh;
+    padding-left: 20px;
+    overflow-y: auto;
+    scroll-behavior: auto;
+}
+
+.contenedorComentarios {
+    background: rgba(199, 186, 142, 0.5);
+    margin-top: 10px;
+    width: 1050px;
+    height: 300px;
+}
+
+h3 {
+    padding-left: 5px;
+    padding-top: 10px;
     color: #60574E;
 }

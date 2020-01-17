@@ -19,6 +19,7 @@ import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.compon
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
 import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item-factura-cliente.component';
 import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/perfil-comerciante.component';
+import { ItemComentarioComponent } from './comerciante/item-comentario/item-comentario.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/per
     VerPuestosClienteComponent,
     ItemCuadriculaComponent,
     BuscarProductosClienteComponent,
-    PerfilComercianteComponent
+    PerfilComercianteComponent,
+    ItemComentarioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+.contenedor {
+    margin-top: 12vh;
+}
+
+.lista-pedidos {
+    margin-top: 10px;
+}
+
+.titulos-lista {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.alinear-derecha {
+    text-align: right;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 1.2em;
+}

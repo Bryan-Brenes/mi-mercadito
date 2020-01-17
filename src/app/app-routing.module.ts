@@ -12,7 +12,9 @@ import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.compon
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
 import { VerPuestosClienteComponent } from './cliente/ver-puestos-cliente/ver-puestos-cliente.component';
 import { BuscarProductosClienteComponent } from './cliente/buscar-productos-cliente/buscar-productos-cliente.component';
+import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
 import { PerfilComercianteComponent } from "./comerciante/perfil-comerciante/perfil-comerciante.component";
+import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -22,9 +24,11 @@ const routes: Routes = [
   { path: 'cliente/carrito', component: CarritoClienteComponent },
   { path: 'cliente/metodoPago', component: PagoClienteComponent },
   { path: 'cliente/facturacion', component: FacturacionClienteComponent },
+  { path: 'cliente/misPedidos', component: MisPedidosClienteComponent },
   { path: 'cliente/verPuesto', component: VerPuestosClienteComponent },
   { path: 'cliente/buscarProducto', component: BuscarProductosClienteComponent },
-  { path: 'comerciante', component: PerfilComercianteComponent }
+  { path: 'comerciante', component: PerfilComercianteComponent },
+  { path: 'cliente/verDetallePuesto', component: VerDetallePuestoClienteComponent},
 ];
 
 @NgModule({

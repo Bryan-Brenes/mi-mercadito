@@ -19,6 +19,9 @@ import { PagoClienteComponent } from './cliente/pago-cliente/pago-cliente.compon
 import { FacturacionClienteComponent } from './cliente/facturacion-cliente/facturacion-cliente.component';
 import { ItemFacturaClienteComponent } from './cliente/item-factura-cliente/item-factura-cliente.component';
 import { PerfilComercianteComponent } from './comerciante/perfil-comerciante/perfil-comerciante.component';
+import { MisPedidosClienteComponent } from './cliente/mis-pedidos-cliente/mis-pedidos-cliente.component';
+import { ItemPedidosComponent } from './cliente/item-pedidos/item-pedidos.component';
+import { VerDetallePuestoClienteComponent } from './cliente/ver-detalle-puesto-cliente/ver-detalle-puesto-cliente.component';
 import { ItemComentarioComponent } from './comerciante/item-comentario/item-comentario.component';
 
 @NgModule({
@@ -36,11 +39,13 @@ import { ItemComentarioComponent } from './comerciante/item-comentario/item-come
     PagoClienteComponent,
     FacturacionClienteComponent,
     ItemFacturaClienteComponent,
-    ItemCarritoComponent,
     VerPuestosClienteComponent,
     ItemCuadriculaComponent,
     BuscarProductosClienteComponent,
     PerfilComercianteComponent,
+    MisPedidosClienteComponent,
+    ItemPedidosComponent,
+    VerDetallePuestoClienteComponent,
     ItemComentarioComponent
   ],
   imports: [

@@ -1,0 +1,41 @@
+<app-navbar-administrador nombre="Mario Garzón" pagina="perfilAfiliado">
+</app-navbar-administrador>
+
+<div class="contenedorPrincipal">
+    <div class="row titulos-lista">
+        <div class="titulos"><span class="negrita">Solicitud de Afiliación</span></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 columnaIzquierda ">
+                <img class="perfilImagen" src="../../../assets/user-default.png" alt="Usuario" srcset="">
+            </div>
+            <div class="col-sm-8 columnaDerecha ">
+                <div>
+                    <span class="negrita">{{nombre}}</span>
+                </div>
+                <div>
+                    <i class="fas fa-id-card"></i>
+                    <span>{{cedula}}</span>
+                </div>
+                <div>
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>{{fechaNacimiento}}</span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>{{telefono}}</span></div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>{{correo}}</span></div>
+                <div>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>{{ubicacion}}</span></div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-secundario" type="button" id="button-addon2"
+        onclick="window.location.href='administrador/solicitudAfiliados'">
+        <a class="" href="/administrador/solicitudAfiliados"></a>Volver
+    </button>
+</div>

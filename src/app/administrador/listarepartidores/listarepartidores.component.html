@@ -1,0 +1,36 @@
+<app-navbar-administrador nombre="Mario Garzón" pagina="repartidores"></app-navbar-administrador>
+
+<div class="contenedor container">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+            aria-describedby="button-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-secundario" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class=boton-agregar>
+        <button class="btn btn-primario" type="button" id="button-addon1"
+            onclick="window.location.href='administrador/agregarRepartidor'">
+            <a href="#"><img src="../../../assets/agregar-usuario.png" alt="Agregar usuario"></a>
+            Agregar
+        </button>
+
+    </div>
+    <div class="row titulos-lista">
+        <div class="col-5 col-sm-8"><span class="negrita">Repartidores</span></div>
+    </div>
+    <div class="lista-repartidores">
+        <app-item-repartidores nombre="Pedro Ramirez Villalobos">
+        </app-item-repartidores>
+        <app-item-repartidores nombre="Carlos Bonilla Arce">
+        </app-item-repartidores>
+        <app-item-repartidores nombre="María José Roldán Guzmán">
+        </app-item-repartidores>
+        <app-item-repartidores nombre="Javier Solano Acosta">
+        </app-item-repartidores>
+        <app-item-repartidores nombre="Daniela Jiménez Soto">
+        </app-item-repartidores>
+
+    </div>
+
+</div>

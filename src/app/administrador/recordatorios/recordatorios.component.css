@@ -1,0 +1,64 @@
+.container-principal {
+    width: 80%;
+    margin-left: 120px;
+    display: flex;
+}
+
+.titulos-lista {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    align-content: center;
+    margin-left: 38%;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 25px;
+}
+
+.titulo {
+    margin-top: 40px;
+    margin-left: 37%;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.flex {
+    display: flex;
+}
+
+#button-addon2 {
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+
+.Clientes, .Comerciantes {
+    width: 600px;
+    height: 498px;
+    left: 749px;
+    top: 286px;
+    background: rgba(199, 186, 142, 0.89);
+    border-radius: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#cajaTexto, .flex {
+    margin-left: 8%;
+    width: 84%;
+}
+
+#cajaTexto {
+    height: 200px;
+}
+
+.input-group {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

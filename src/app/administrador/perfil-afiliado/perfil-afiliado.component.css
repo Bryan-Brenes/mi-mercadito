@@ -1,0 +1,42 @@
+.contenedorPrincipal {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.titulos-lista {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    align-content: center;
+    margin-left: 25%;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 25px;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.columnaIzquierda {
+    width: 80%;
+}
+
+.columnaDerecha {
+    margin-top: 30px;
+}
+
+.columnaDerecha div {
+    margin: 10px;
+}
+
+.fas {
+    margin: 5px;
+}
+
+#button-addon2 {
+    width: 150px;
+    height: 35px;
+    margin-left: 680px;
+}

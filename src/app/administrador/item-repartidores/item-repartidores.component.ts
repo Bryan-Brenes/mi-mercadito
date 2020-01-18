@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ItemRepartidoresComponent implements OnInit {
 
   @Input() nombre: string;
-  @Input() monto: string;
+
 
   constructor() { }
 

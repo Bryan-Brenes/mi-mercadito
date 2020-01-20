@@ -4,15 +4,17 @@
 
 <div class="contenedor">
     <div class="contenido">
-        <form action="/cliente">
+        <div>
             <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                <input [(ngModel)]="email" type="email" class="form-control" id="email"
+                    placeholder="Correo electrónico">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <input [(ngModel)]="contrasenna" type="password" class="form-control" id="password"
+                    placeholder="Contraseña">
             </div>
-            <button type="submit" class="btn ingresar-btn">Ingresar</button>
-        </form>
+            <button (click)="validarContrasenna()" type="submit" class="btn ingresar-btn">Ingresar</button>
+        </div>
         <p class="registrate-text">¿Quieres formar parte de nuestra comunidad?<a href="/registroComprador"
                 class="registrate-btn">Registro</a>
         </p>

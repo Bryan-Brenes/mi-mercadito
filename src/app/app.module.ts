@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+// Servicios
+import { LoginService } from './servicios/login.service';
+import { ConfigService } from './servicios/config.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -98,8 +103,12 @@ import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/a
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    LoginService,
+    ConfigService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

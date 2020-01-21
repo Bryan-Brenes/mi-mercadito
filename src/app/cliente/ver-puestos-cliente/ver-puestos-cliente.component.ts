@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ClienteService } from 'src/app/servicios/cliente.service';
+import { SesionClienteService } from 'src/app/servicios/sesion-cliente.service';
 
 @Component({
   selector: 'app-ver-puestos-cliente',
@@ -6,25 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ver-puestos-cliente.component.css']
 })
 export class VerPuestosClienteComponent implements OnInit {
-  
-  nombre: string = "Rodrigo Zuñiga";
-  puestos: Object[];
 
-  constructor() { }
+  nombre: string;
+  puestos: any;
+
+  constructor(private clienteService: ClienteService, public sesionCliente: SesionClienteService) { }
 
   ngOnInit() {
-    this.puestos = this.obtenerPuestos();
+    this.obtenerPuestos();
   }
 
 
-  private obtenerPuestos(): Object []{
-    var puestos = [];
-    for (let i = 0; i < 10; i++) {
-        puestos.push({
-          nombre: "Productos fresquita" 
-        })
-    }
-    return puestos;
+  private obtenerPuestos() {
+    this.clienteService.obtenerListaComerciantes().subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      this.puestos = dato;
+    })
   }
 
 

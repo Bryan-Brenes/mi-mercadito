@@ -4,29 +4,29 @@
     <div class="row">
         <div class="col-sm-6">
             <h3>Pedidos por preparar</h3>
-            <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
+            <app-item-pedido-repartidor *ngFor="let pedido of pedidos" estado="{{pedido.estadopreparado ? 'completado':'no-completado'}}" nombre="{{pedido.nombre}}" fecha="{{pedido.fecha}}" enviar="{{pedido.transporte == '1' ? 'si':'no'}}" idpedido="{{pedido.id}}" ruta="/repartidor/detallesPedido">
+            </app-item-pedido-repartidor>
+            <!-- <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
-            </app-item-pedido-repartidor>
-            <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="si">
-            </app-item-pedido-repartidor>
+            </app-item-pedido-repartidor> -->
         </div>
         <div class="col-sm-6">
             <h3>Pedidos por enviar</h3>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
             </app-item-pedido-repartidor>
-            <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
+            <!-- <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
             </app-item-pedido-repartidor>
             <app-item-pedido-repartidor estado="no-completado" nombre="Rodrigo Zúñiga" fecha="01 ene 2020" enviar="no">
-            </app-item-pedido-repartidor>
+            </app-item-pedido-repartidor> -->
 
         </div>
     </div>

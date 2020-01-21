@@ -8,5 +8,5 @@
     <span class="nombre">{{nombre}}</span>
     <div class="separador"></div>
     <span *ngIf="enviar == 'si'"><i class="fas fa-truck iconoCamion"></i></span>
-    <a href="#"><i class="fas fa-list-alt"></i></a>
+    <a [routerLink]="[ ruta , idpedido ]"><i class="fas fa-list-alt"></i></a>
 </div>

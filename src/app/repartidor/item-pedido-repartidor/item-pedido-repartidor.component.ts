@@ -11,6 +11,9 @@ export class ItemPedidoRepartidorComponent implements OnInit {
   @Input() nombre: string;
   @Input() enviar: string;
   @Input() estado: string;
+  @Input() ruta: string ;
+  @Input() idpedido: string;
+
 
   public completado: boolean;
 

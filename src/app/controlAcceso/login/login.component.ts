@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
   private validarContrasenna() {
     if (this.email != undefined && this.contrasenna != undefined) {
       this.loginService.getContrasenna(this.email).subscribe(data => {

@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 // Servicios
 import { LoginService } from './servicios/login.service';
 import { ConfigService } from './servicios/config.service';
+import { RepartidorService } from './servicios/repartidor.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -107,7 +108,8 @@ import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/a
   ],
   providers: [
     LoginService,
-    ConfigService
+    ConfigService,
+    RepartidorService
   ],
   bootstrap: [AppComponent]
 })

@@ -25,6 +25,8 @@ export class ItemPedidoRepartidorComponent implements OnInit {
     } else {
       this.completado = false;
     }
+    var fechaDate = new Date(this.fecha);
+    this.fecha = `${fechaDate.getDay()} / ${fechaDate.getMonth()} / ${fechaDate.getFullYear()}`;
   }
 
 

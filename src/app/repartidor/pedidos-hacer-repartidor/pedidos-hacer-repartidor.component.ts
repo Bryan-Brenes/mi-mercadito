@@ -24,6 +24,18 @@ export class PedidosHacerRepartidorComponent implements OnInit {
       console.log(dato);
       this.pedidos=dato;
 
+      this.pedidosPorHacer = [];
+      this.pedidosPorEnviar = [];
+      for(let i = 0; i < this.pedidos.lengh; i++){
+        var item = this.pedidos[i];
+        if(item.transporte == '1' && item.estadopreparado == true){
+          this.pedidosPorEnviar.push(item);
+        } else {
+          this.pedidosPorHacer.push(item);
+        }
+      }
+      console.log(this.pedidosPorEnviar)
+
     })
   }
 

@@ -1,4 +1,4 @@
-<app-navbar-cliente nombre={{nombre}} pagina="verPuesto"></app-navbar-cliente>
+<app-navbar-cliente nombre={{sesionCliente.nombre}} pagina="verPuesto"></app-navbar-cliente>
 
 <div class="contenedorPrincipal">
     <div class="container">
@@ -12,7 +12,8 @@
         </div>
         <div class="cuadricula">
             <app-item-cuadricula style="width: 250px;" *ngFor="let puesto of puestos" titulo={{puesto.nombre}}
-                subtitulo="" boton="Ver perfil"></app-item-cuadricula>
+                subtitulo="" boton="Ver perfil" id="{{puesto.id}}" ruta="/cliente/verDetallePuesto">
+            </app-item-cuadricula>
         </div>
     </div>
 

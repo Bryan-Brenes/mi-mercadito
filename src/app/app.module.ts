@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './servicios/login.service';
 import { ConfigService } from './servicios/config.service';
 import { SesionClienteService } from './servicios/sesion-cliente.service';
+import { ClienteService } from './servicios/cliente.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -112,6 +113,7 @@ import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
     LoginService,
     ConfigService,
     SesionClienteService,
+    ClienteService,
   ],
   bootstrap: [AppComponent]
 })

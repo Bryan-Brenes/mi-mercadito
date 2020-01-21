@@ -1,4 +1,4 @@
-import { Component, Input ,  OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-cuadricula',
@@ -7,11 +7,13 @@ import { Component, Input ,  OnInit } from '@angular/core';
 })
 export class ItemCuadriculaComponent implements OnInit {
 
-  @Input() titulo : string;
-  @Input() subtitulo : string;
-  @Input() precio : string;
-  @Input() boton : string;
-  
+  @Input() titulo: string;
+  @Input() subtitulo: string;
+  @Input() precio: string;
+  @Input() boton: string;
+  @Input() id: string;
+  @Input() ruta: string;
+
 
   constructor() { }
 

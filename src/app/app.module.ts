@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 // Servicios
 import { LoginService } from './servicios/login.service';
 import { ConfigService } from './servicios/config.service';
+import { SesionClienteService } from './servicios/sesion-cliente.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,6 +51,7 @@ import { ItemProductoComercianteComponent } from './comerciante/item-producto-co
 import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
 import { ItemRepartidoresComponent } from './administrador/item-repartidores/item-repartidores.component';
 import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
+import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +100,7 @@ import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/a
     ListarepartidoresComponent,
     ItemRepartidoresComponent,
     AgregarRepartidorComponent,
+    MensajeErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -107,7 +110,8 @@ import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/a
   ],
   providers: [
     LoginService,
-    ConfigService
+    ConfigService,
+    SesionClienteService,
   ],
   bootstrap: [AppComponent]
 })

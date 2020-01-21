@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SesionClienteService } from 'src/app/servicios/sesion-cliente.service';
 
 @Component({
   selector: 'app-perfil-cliente',
@@ -7,17 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilClienteComponent implements OnInit {
 
-  nombre: string = "Rodrigo Zuñiga";
-  cedula: string = "14587895594";
-  fechaNacimiento: string = "15-10-1989";
-  telefono: string = "8745-1523";
-  correo: string = "rodrigoZC2@gmail.com";
-  ubicacion: string ="De la escuela de paraiso 20 m este y 8 m sur, Paraíso, Cartago   Province, Costa Rica";
+  nombre: string;
+  cedula: string;
+  fechaNacimiento: string;
+  telefono: string;
+  correo: string;
+  ubicacion: string;
 
 
-  constructor() { }
+  constructor(private sesionCliente: SesionClienteService) { }
 
   ngOnInit() {
+    this.actualizarDatos();
+  }
+
+  public actualizarDatos() {
+    var fecha = new Date(this.sesionCliente.fechaNacimiento)
+    this.nombre = `${this.sesionCliente.nombre} ${this.sesionCliente.apellido}`;
+    this.fechaNacimiento = `${fecha.getDay() + 1}-${fecha.getMonth() + 1}-${fecha.getFullYear()}`;
+    this.telefono = this.sesionCliente.telefono;
+    this.correo = this.sesionCliente.email;
   }
 
 }

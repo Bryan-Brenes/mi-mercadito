@@ -3,9 +3,9 @@
 </div>
 
 <!-- Alertas -->
-<div *ngIf="enviada" class="alert alert-success alerta alert-dismissible fade show" role="alert">
-    Su solicitud fue enviada. Pronto le llegará al correo proporcionado una respuesta.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<div *ngIf="error != undefined" class="alert alert-secondary alert-dismissible fade show alerta" role="alert">
+    {{error}}
+    <button (click)="resetError()" type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
@@ -18,33 +18,37 @@
             <a href="/registroComprador" class="switch"></a>
             <span class="p-label">Comerciante</span>
         </div>
-        <form action="#">
+        <div>
             <div class="row">
                 <p class="col-sm-12 p-label">Información del puesto</p>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <input type="text" class="form-control" id="nombrePuesto" placeholder="Nombre el puesto">
+                    <input [(ngModel)]="nombre" type="text" class="form-control" id="nombrePuesto"
+                        placeholder="Nombre el puesto">
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                    <input [(ngModel)]="email" type="email" class="form-control" id="email"
+                        placeholder="Correo electrónico">
                 </div>
                 <div class="form-group col-sm-6">
-                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                    <input [(ngModel)]="telefono" type="tel" class="form-control" id="telefono" placeholder="Teléfono">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    <input [(ngModel)]="contrasenna" type="password" class="form-control" id="password"
+                        placeholder="Contraseña">
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <textarea class="form-control" id="direccion" rows="3" placeholder="Dirección"></textarea>
+                    <textarea [(ngModel)]="ubicacion" class="form-control" id="direccion" rows="3"
+                        placeholder="Dirección"></textarea>
                 </div>
             </div>
 
@@ -53,15 +57,17 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <input type="text" class="form-control" id="nombreCuenta" placeholder="Nombre de la cuenta">
+                    <input [(ngModel)]="nombreCuenta" type="text" class="form-control" id="nombreCuenta"
+                        placeholder="Nombre de la cuenta">
                 </div>
                 <div class="form-group col-sm-6">
-                    <input type="number" class="form-control" id="numeroCuenta" placeholder="Número de cuenta (IBAN)">
+                    <input [(ngModel)]="numeroCuenta" type="number" class="form-control" id="numeroCuenta"
+                        placeholder="Número de cuenta (IBAN)">
                 </div>
             </div>
 
-            <button type="button" class="btn registrar-btn">Registrarse</button>
-        </form>
+            <button (click)="enviarSolicitud()" type="button" class="btn registrar-btn">Registrarse</button>
+        </div>
         <p class="registrate-text p-label">¿Ya tienes cuenta?<a href="/" class="inicia-sesion-btn">Inicia
                 sesión</a></p>
     </div>

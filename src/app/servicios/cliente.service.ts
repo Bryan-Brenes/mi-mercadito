@@ -16,4 +16,12 @@ export class ClienteService {
   public obtenerInfoComerciante(id: string) {
     return this.http.get(this.configService.url_base + `comerciante/${id}`);
   }
+
+  public obtenerComentarios(id: string) {
+    return this.http.get(this.configService.url_base + `comentarios/${id}`)
+  }
+
+  public enviarComentarios(info: any) {
+    return this.http.post(this.configService.url_base + 'comentarios', info);
+  }
 }

@@ -15,12 +15,16 @@ export class VerDetallePuestoClienteComponent implements OnInit {
   telefono: string = "8745-6725";
   correo: string = "fresquita-productos@gmail.com";
   ubicacion: string = "De la escuela de paraiso 20 m este y 8 m sur, Paraíso, Cartago   Province, Costa Rica";
+  comentarios: any;
+
+  comentarioNuevo: string;
 
   constructor(private route: ActivatedRoute, public sesionCliente: SesionClienteService, private clienteService: ClienteService) { }
 
   ngOnInit() {
     this.obtenerInformación();
-    this.nombre = this.sesionCliente.nombre;
+    this.obtenerComentarios();
+    this.nombre = `${this.sesionCliente.nombre} ${this.sesionCliente.apellido}`;
   }
 
   private obtenerInformación() {
@@ -33,6 +37,33 @@ export class VerDetallePuestoClienteComponent implements OnInit {
       this.correo = dato.id;
       this.ubicacion = dato.ubicacion;
     })
+  }
+
+  private obtenerComentarios() {
+    var id = this.route.snapshot.paramMap.get('id');
+    this.comentarios = []
+    this.clienteService.obtenerComentarios(id).subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      console.log(dato)
+      this.comentarios = dato;
+    })
+  }
+
+  public enviarComentario() {
+    if (this.comentarioNuevo != undefined) {
+      var fechaObj = new Date();
+      var json = {
+        idCliente: this.sesionCliente.email,
+        idComerciante: this.route.snapshot.paramMap.get('id'),
+        comentario: this.comentarioNuevo,
+        fecha: `${fechaObj.getFullYear()}-${fechaObj.getMonth() + 1}-${fechaObj.getDay() + 1}`
+      }
+      console.log(json)
+      this.clienteService.enviarComentarios(json).subscribe(data => {
+        console.log(data)
+        this.obtenerComentarios()
+      })
+    }
   }
 
 }

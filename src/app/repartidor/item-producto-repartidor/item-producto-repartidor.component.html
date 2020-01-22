@@ -2,6 +2,6 @@
     <div class="col-4 col-sm-6"><span>{{producto}}</span></div>
     <div class="col-3 col-sm-3 centrar"><span>{{comerciante}}</span></div>
     <div class="col-3 col-sm-2 centrar"><span>{{cantidad}}</span></div>
-    <div class="col-2 col-sm-1 centrar"><input [(ngModel)]="listo" type="checkbox"></div>
+    <div class="col-2 col-sm-1 centrar"><input (change)="cambiarEstadoProducto()" [(ngModel)]="listo" type="checkbox"></div>
 
 </div>

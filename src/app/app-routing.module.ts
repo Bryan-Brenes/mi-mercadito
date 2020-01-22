@@ -49,7 +49,7 @@ const routes: Routes = [
   { path: 'comerciante/miPuesto', component: MiPuestoComercianteComponent },
   { path: 'comerciante/agregarProductoMiPuesto', component: AgregarProductoMiPuestoComercianteComponent },
   { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },
-  { path: 'repartidor/detallesPedido', component: DetallesPedidosRepartidorComponent },
+  { path: 'repartidor/detallesPedido/:id', component: DetallesPedidosRepartidorComponent },
   { path: 'comerciante/misEncargos', component: MisEncargosComponent },
   { path: 'comerciante/detallesPedido', component: DetallePedidoComercianteComponent },
   { path: 'administrador/listaRepartidores', component: ListarepartidoresComponent },

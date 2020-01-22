@@ -1,20 +1,19 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-green">
     <a class="navbar-brand" href="#">Mi mercadito</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item" [ngClass]="{'active': pagina=='repartidores'}">
-                <a class="nav-link" href="/administrador/listaRepartidores">Repartidores <span
+                <a class="nav-link" routerLink="/administrador/listaRepartidores">Repartidores <span
                         class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" [ngClass]="{'active': pagina=='solicitudAfiliados'}">
-                <a class="nav-link" href="/administrador/solicitudAfiliados">Solicitudes de Afiliación</a>
+                <a class="nav-link" routerLink="/administrador/solicitudAfiliados">Solicitudes de Afiliación</a>
             </li>
             <li class="nav-item" [ngClass]="{'active': pagina=='recordatorios'}">
-                <a class="nav-link" href="/administrador/recordatorios">Recordatorios</a>
+                <a class="nav-link" routerLink="/administrador/recordatorios">Recordatorios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Salir</a>
@@ -24,6 +23,6 @@
     </div>
     <div class="form-inline contenedor-derecho float-right">
         <img class="imagen-administrador" src="../../../assets/user-default.png" alt="foto administrador">
-        <span class="nombre-administrador">{{nombre}}</span>
+        <span class="nombre-administrador">Administrador</span>
     </div>
 </nav>

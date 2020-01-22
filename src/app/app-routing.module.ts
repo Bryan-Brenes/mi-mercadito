@@ -25,8 +25,13 @@ import { AgregarProductoMiPuestoComercianteComponent } from "./comerciante/agreg
 import { DetallesPedidosRepartidorComponent } from './repartidor/detalles-pedidos-repartidor/detalles-pedidos-repartidor.component';
 import { MisEncargosComponent } from "./comerciante/mis-encargos/mis-encargos.component";
 import { DetallePedidoComercianteComponent } from "./comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component";
+
 import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
 import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
+import { ListaSolAfiliadosComponent  } from './administrador/lista-sol-afiliados/lista-sol-afiliados.component';
+import { ActualizarRepartidorComponent } from './administrador/actualizar-repartidor/actualizar-repartidor.component';
+import { PerfilAfiliadoComponent } from './administrador/perfil-afiliado/perfil-afiliado.component';
+import { RecordatoriosComponent } from './administrador/recordatorios/recordatorios.component';
 
 
 const routes: Routes = [
@@ -52,8 +57,15 @@ const routes: Routes = [
   { path: 'repartidor/detallesPedido/:id', component: DetallesPedidosRepartidorComponent },
   { path: 'comerciante/misEncargos', component: MisEncargosComponent },
   { path: 'comerciante/detallesPedido', component: DetallePedidoComercianteComponent },
+
   { path: 'administrador/listaRepartidores', component: ListarepartidoresComponent },
   { path: 'administrador/agregarRepartidor', component: AgregarRepartidorComponent },
+  { path: 'administrador/solicitudAfiliados', component: ListaSolAfiliadosComponent },
+  { path: 'administrador/actualizarRepartidor', component: ActualizarRepartidorComponent },
+  { path: 'administrador/listaSolAfiliados', component: ListaSolAfiliadosComponent},
+  { path: 'administrador/perfilAfiliado/:id', component: PerfilAfiliadoComponent},
+  { path: 'administrador/recordatorios', component: RecordatoriosComponent},
+
 ];
 
 @NgModule({

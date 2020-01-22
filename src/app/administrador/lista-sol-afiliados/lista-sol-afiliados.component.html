@@ -2,8 +2,7 @@
 
 <div class="contenedor container">
     <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
-            aria-describedby="button-addon2">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2">
         <div class="input-group-append">
             <button class="btn btn-secundario" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
         </div>
@@ -12,17 +11,8 @@
         <div class="col-5 col-sm-8"><span class="negrita">Solicitud de Afiliados</span></div>
     </div>
     <div class="lista-solAfiliados">
-        <app-item-sol-afiliados nombre="Alejandra Garzón Guitierrez">
+        <app-item-sol-afiliados *ngFor="let solicitud of solicitudes" nombre="{{solicitud.nombre}}" idsolicitud="{{solicitud.id}}" ruta="/administrador/perfilAfiliado">
         </app-item-sol-afiliados>
-        <app-item-sol-afiliados nombre="José Brenes Hidalgo">
-        </app-item-sol-afiliados>
-        <app-item-sol-afiliados nombre="Karla Jiménez Loría">
-        </app-item-sol-afiliados>
-        <app-item-sol-afiliados nombre="Pablo Castro Rodríguez">
-        </app-item-sol-afiliados>
-        <app-item-sol-afiliados nombre="Daniela Jiménez Soto">
-        </app-item-sol-afiliados>
-
     </div>
 
 </div>

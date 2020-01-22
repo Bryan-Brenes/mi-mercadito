@@ -37,5 +37,4 @@ export class ItemPedidoRepartidorComponent implements OnInit {
     });
   }
 
-
 }

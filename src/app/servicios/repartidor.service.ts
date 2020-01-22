@@ -13,4 +13,17 @@ export class RepartidorService {
     return this.http.get(this.configService.url_base+'pedidos')
   }
 
+  public verDetallesPedido(id: any){
+    return this.http.get(this.configService.url_base+'pedidos/detalle/'+id)
+  }
+
+  public cambiarEstadoPedidoEntregado(id: any){
+    return this.http.get(this.configService.url_base+'pedidos/entregar/'+id)
+  }
+  
+  public cambiarEstadoProducto(id: any , idPedido : any){
+    return this.http.get(this.configService.url_base+'pedidos/producto/'+id + '/' + idPedido)
+  }
+
+
 }

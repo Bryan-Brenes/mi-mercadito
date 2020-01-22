@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RepartidorService } from 'src/app/servicios/repartidor.service';
+import { SesionClienteService } from 'src/app/servicios/sesion-cliente.service';
 
 @Component({
   selector: 'app-pedidos-hacer-repartidor',
@@ -9,13 +10,15 @@ import { RepartidorService } from 'src/app/servicios/repartidor.service';
 export class PedidosHacerRepartidorComponent implements OnInit {
 
 
-  constructor(private repartidorServicio: RepartidorService) { }
+  constructor(private repartidorServicio: RepartidorService, public sesionCliente: SesionClienteService) { }
   pedidos: any;
   pedidosPorHacer:any;
   pedidosPorEnviar:any;
+  nombre: string;
 
   ngOnInit() {
     this.obtenerPedidos();
+    this.nombre = `${this.sesionCliente.nombre} ${this.sesionCliente.apellido}`
   }
 
   private obtenerPedidos(){
@@ -26,7 +29,7 @@ export class PedidosHacerRepartidorComponent implements OnInit {
 
       this.pedidosPorHacer = [];
       this.pedidosPorEnviar = [];
-      for(let i = 0; i < this.pedidos.lengh; i++){
+      for(let i = 0; i < this.pedidos.length; i++){
         var item = this.pedidos[i];
         if(item.transporte == '1' && item.estadopreparado == true){
           this.pedidosPorEnviar.push(item);
@@ -34,7 +37,7 @@ export class PedidosHacerRepartidorComponent implements OnInit {
           this.pedidosPorHacer.push(item);
         }
       }
-      console.log(this.pedidosPorEnviar)
+      console.log(this.pedidosPorHacer)
 
     })
   }

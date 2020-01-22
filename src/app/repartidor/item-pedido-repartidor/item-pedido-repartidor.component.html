@@ -1,6 +1,6 @@
 <div class="contendor" [ngClass]="{'bg-completado': completado == true}">
     <div class="form-check">
-        <input [(ngModel)]="completado" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <input (change)="cambiarEstadoPedidoEntregado()" [(ngModel)]="completado" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">
             {{fecha}}
         </label>

@@ -1,4 +1,4 @@
-<app-nav-bar-repartidor pagina="pedidos" nombre="Pedro Ramirez Villalobos"></app-nav-bar-repartidor>
+<app-nav-bar-repartidor pagina="pedidos" nombre="{{nombreUsuario}}"></app-nav-bar-repartidor>
 <div class="contenedorPrincipal">
     <div class="container">
         <div class="row">
@@ -10,20 +10,20 @@
                 <div class="datoCliente">
                     <span class="letraNombre">{{nombre}}</span>
                 </div>
-                <div class="datoCliente">
+                <!-- <div class="datoCliente">
                     <i class="fas fa-id-card"></i>
                     <span>{{cedula}}</span>
-                </div>
-                <div class="datoCliente">
+                </div> -->
+                <!-- <div class="datoCliente">
                     <i class="fas fa-birthday-cake"></i>
                     <span>{{fechaNacimiento}}</span>
-                </div>
+                </div> -->
                 <div class="datoCliente">
                     <i class="fas fa-phone-alt"></i>
                     <span>{{telefono}}</span></div>
-                <div class="datoCliente">
+                <!-- <div class="datoCliente">
                     <i class="fas fa-envelope"></i>
-                    <span>{{correo}}</span></div>
+                    <span>{{correo}}</span></div> -->
                 <div class="datoCliente">
                     <i class="fas fa-map-marked-alt"></i>
                     <span>{{ubicacion}}</span></div>
@@ -36,16 +36,8 @@
                     <div class="col-sm-2 col-3">Cantidad</div>
                 </div>
                 <div class="tabla">
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="listo"></app-item-producto-repartidor>
-                    <app-item-producto-repartidor producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg" estado="no-listo"></app-item-producto-repartidor>
+                    <app-item-producto-repartidor  *ngFor="let detalle of pedido" producto="{{detalle.nombreproducto}}" comerciante="{{detalle.nombrecomerciante}}" 
+                    cantidad="{{detalle.cantidadproducto + detalle.medicionproducto}}  " estado="{{detalle.estadoproducto == true ? 'listo':'no-listo'}}" idProducto = "{{detalle.idproducto}}" idPedido = "{{detalle.idpedido}}" ></app-item-producto-repartidor>
                 </div>
             </div>
         </div>

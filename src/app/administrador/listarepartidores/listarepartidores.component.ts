@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminService } from 'src/app/servicios/admin.service';
 
 @Component({
   selector: 'app-listarepartidores',
@@ -8,11 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class ListarepartidoresComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private adminServicio : AdminService ) { }
+
+  nombre:string;
+  repartidores:any;
 
   ngOnInit() {
-
+    this.mostrarRepartidores();
   }
 
+  private mostrarRepartidores(){
+    this.adminServicio.mostrarRepartidor().subscribe(data =>{
+      var dato = JSON.parse(JSON.stringify(data))
+      console.log(dato);
+      this.repartidores=dato;
+
+    })
+  }
 
 }

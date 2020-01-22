@@ -17,6 +17,15 @@ div.contenedor.row {
     box-shadow: 3px 3px 12px -5px rgba(0, 0, 0, 0.75);
 }
 
+.bton {
+    background-color: #c7ba8e;
+    border: 1px solid #c7ba8e;
+}
+
+.iconos {
+    text-align: right;
+}
+
 .contenedor:hover {
     -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 12px -0px rgba(0, 0, 0, 0.75);
@@ -52,8 +61,14 @@ a:hover {
     border-radius: 8px;
 }
 
-.imagen-informacion, .imagen-confirmar, .imagen-cancelar {
+.imagen-informacion,
+.imagen-confirmar,
+.imagen-cancelar {
     position: relative;
     left: 230px;
     margin: 20px 10px 0 0;
+}
+
+.icono {
+    padding: 10px;
 }

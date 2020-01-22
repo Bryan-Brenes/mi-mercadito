@@ -11,6 +11,8 @@ import { SesionClienteService } from './servicios/sesion-cliente.service';
 import { ClienteService } from './servicios/cliente.service';
 import { CarritoService } from './servicios/carrito.service'
 import { SesionComercianteService } from './servicios/sesion-comerciante.service'
+import { AdminService } from './servicios/admin.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -52,10 +54,18 @@ import { ItemProductoRepartidorComponent } from './repartidor/item-producto-repa
 import { ItemPedidoComercianteComponent } from './comerciante/item-pedido-comerciante/item-pedido-comerciante.component';
 import { DetallePedidoComercianteComponent } from './comerciante/detalle-pedido-comerciante/detalle-pedido-comerciante.component';
 import { ItemProductoComercianteComponent } from './comerciante/item-producto-comerciante/item-producto-comerciante.component';
+
 import { ListarepartidoresComponent } from './administrador/listarepartidores/listarepartidores.component';
 import { ItemRepartidoresComponent } from './administrador/item-repartidores/item-repartidores.component';
+import { ActualizarRepartidorComponent } from './administrador/actualizar-repartidor/actualizar-repartidor.component';
 import { AgregarRepartidorComponent } from './administrador/agregar-repartidor/agregar-repartidor.component';
+import { ItemSolAfiliadosComponent } from './administrador/item-sol-afiliados/item-sol-afiliados.component';
+import { ListaSolAfiliadosComponent } from './administrador/lista-sol-afiliados/lista-sol-afiliados.component';
+import { PerfilAfiliadoComponent } from './administrador/perfil-afiliado/perfil-afiliado.component';
+import { RecordatoriosComponent } from './administrador/recordatorios/recordatorios.component';
 import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
+
+
 
 @NgModule({
   declarations: [
@@ -103,8 +113,15 @@ import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
     NavbarAdministradorComponent,
     ListarepartidoresComponent,
     ItemRepartidoresComponent,
-    AgregarRepartidorComponent,
-    MensajeErrorComponent,
+
+    ActualizarRepartidorComponent ,
+    AgregarRepartidorComponent ,
+    ItemSolAfiliadosComponent,
+    ListaSolAfiliadosComponent,
+    PerfilAfiliadoComponent ,
+    RecordatoriosComponent,
+    MensajeErrorComponent
+
   ],
   imports: [
     BrowserModule,
@@ -120,6 +137,7 @@ import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
     ClienteService,
     CarritoService,
     SesionComercianteService,
+    AdminService ,
     RepartidorService
   ],
   bootstrap: [AppComponent]

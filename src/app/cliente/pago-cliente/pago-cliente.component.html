@@ -7,23 +7,23 @@
         </div>
 
         <div class="formulario">
-            <form action="#">
+            <div>
                 <div class="form-group">
                     <label for="nombreTarjeta">Nombre de la tarjeta</label>
-                    <input type="text" class="form-control" id="nombreTarjeta" aria-describedby="nombre de la tarjeta"
-                        placeholder="Nombre de la tarjeta">
+                    <input [(ngModel)]="nombreTarjeta" type="text" class="form-control" id="nombreTarjeta"
+                        aria-describedby="nombre de la tarjeta" placeholder="Nombre de la tarjeta">
                 </div>
                 <div class="form-group">
                     <label for="numeroTarjeta">Número de la tarjeta</label>
-                    <input type="text" class="form-control" id="numeroTarjeta" aria-describedby="número de la tarjeta"
-                        placeholder="1234 5678 9012 3456">
+                    <input [(ngModel)]="numeroTarjeta" type="text" class="form-control" id="numeroTarjeta"
+                        aria-describedby="número de la tarjeta" placeholder="1234 5678 9012 3456">
                 </div>
                 <div class="row">
                     <div class="col-sm-7">
                         <label>Fecha de expiración</label>
                         <div class="row">
                             <div class="col sm-9">
-                                <select class="form-control">
+                                <select [(ngModel)]="mesExpiracion" class="form-control">
                                     <option value="01">Enero</option>
                                     <option value="02">Febrero</option>
                                     <option value="03">Marzo</option>
@@ -39,7 +39,7 @@
                                 </select>
                             </div>
                             <div class="col-sm-3">
-                                <select class="form-control">
+                                <select [(ngModel)]="anioExpiracion" class="form-control">
                                     <option value="{{anio}}" *ngFor="let anio of aniosExpiracion">{{anio}}</option>
                                 </select>
                             </div>
@@ -48,13 +48,13 @@
                     <div class="col-sm-5">
                         <div class="form-group">
                             <label for="cvv">Código de seguridad</label>
-                            <input type="number" class="form-control" id="cvv" aria-describedby="código de seguridad"
-                                placeholder="CVV">
+                            <input [(ngModel)]="cvv" type="number" class="form-control" id="cvv"
+                                aria-describedby="código de seguridad" placeholder="CVV">
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primario">Pagar</button>
-            </form>
+                <button (click)="pagar()" type="button" class="btn btn-primario">Pagar</button>
+            </div>
         </div>
     </div>
 </div>

@@ -12,9 +12,9 @@
             </div>
         </div>
         <div class="cuadricula">
-            <app-item-cuadricula style="width: 250px;" *ngFor="let producto of productos" titulo={{producto.nombre}}
-                subtitulo={{producto.producto}} precio={{producto.precio}} boton="Agregar al carrito">
-            </app-item-cuadricula>
+            <app-item-cuadricula style="width: 250px;" *ngFor="let producto of productos"
+                titulo={{producto.nombrecomerciante}} subtitulo={{producto.nombreproducto}} precio={{producto.montokg}}
+                boton="Agregar al carrito" idProducto={{producto.idproducto}}></app-item-cuadricula>
         </div>
     </div>
 

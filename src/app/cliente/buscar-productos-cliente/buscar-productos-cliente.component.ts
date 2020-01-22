@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ClienteService } from 'src/app/servicios/cliente.service';
+import { SesionClienteService } from 'src/app/servicios/sesion-cliente.service';
+import { CarritoService } from 'src/app/servicios/carrito.service';
 
 @Component({
   selector: 'app-buscar-productos-cliente',
@@ -7,26 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarProductosClienteComponent implements OnInit {
 
-  nombre: string = "Rodrigo Zuñiga";
-  productos: Object[];
+  nombre: string;
+  productos: any;
 
-  constructor() { }
+  constructor(private clienteService: ClienteService, private sesionCliente: SesionClienteService, private carritoService: CarritoService) { }
 
   ngOnInit() {
-    this.productos = this.obtenerProductos();
+    this.obtenerProductos();
+    this.nombre = `${this.sesionCliente.nombre} ${this.sesionCliente.apellido}`
   }
 
 
-  private obtenerProductos(): Object []{
-    var productos = [];
-    for (let i = 0; i < 10; i++) {
-        productos.push({
-          nombre: "Productos fresquita",
-          producto: "Cartón de huevos",
-          precio: "350 kg"
-        })
-    }
-    return productos;
+  private obtenerProductos(): void {
+    this.clienteService.obtenerProductos().subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      this.productos = dato;
+    })
   }
+
+
 
 }

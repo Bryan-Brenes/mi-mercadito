@@ -24,4 +24,8 @@ export class ClienteService {
   public enviarComentarios(info: any) {
     return this.http.post(this.configService.url_base + 'comentarios', info);
   }
+
+  public obtenerProductos() {
+    return this.http.get(this.configService.url_base + 'productos');
+  }
 }

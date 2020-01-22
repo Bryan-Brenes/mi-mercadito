@@ -21,6 +21,10 @@ export class LoginService {
     return this.http.post(this.config.url_base + `cliente`, info);
   }
 
+  public obtenerComerciante(info: any) {
+    return this.http.get(this.config.url_base + `comerciante/${info}`);
+  }
+
   /**
    * Envia un solicitud para comerciantes
    * @param info , json para la consulta

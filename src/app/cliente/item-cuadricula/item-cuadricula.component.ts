@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CarritoService } from 'src/app/servicios/carrito.service';
 
 @Component({
   selector: 'app-item-cuadricula',
@@ -14,10 +15,20 @@ export class ItemCuadriculaComponent implements OnInit {
   @Input() id: string;
   @Input() ruta: string;
 
+  @Input() idProducto: number;
 
-  constructor() { }
+
+  constructor(private carritoService: CarritoService) { }
 
   ngOnInit() {
+  }
+
+  public agregarCarrito() {
+    this.carritoService.obtenerInfoProducto(this.idProducto).subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      this.carritoService.agregarProducto(dato[0]);
+      console.log(this.carritoService.productos)
+    })
   }
 
 }

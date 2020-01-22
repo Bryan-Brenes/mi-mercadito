@@ -9,6 +9,8 @@ import { ConfigService } from './servicios/config.service';
 import { RepartidorService } from './servicios/repartidor.service';
 import { SesionClienteService } from './servicios/sesion-cliente.service';
 import { ClienteService } from './servicios/cliente.service';
+import { CarritoService } from './servicios/carrito.service'
+import { SesionComercianteService } from './servicios/sesion-comerciante.service'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -116,6 +118,8 @@ import { MensajeErrorComponent } from './mensaje-error/mensaje-error.component';
     ConfigService,
     SesionClienteService,
     ClienteService,
+    CarritoService,
+    SesionComercianteService,
     RepartidorService
   ],
   bootstrap: [AppComponent]

@@ -6,17 +6,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/comerciante">Perfil <span class="sr-only">(current)</span></a>
+            <li class="nav-item" [ngClass]="{'active': pagina=='perfil'}">
+                <a class="nav-link" routerLink="/comerciante">Perfil <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/comerciante/verInventario">Inventario</a>
+            <li class="nav-item" [ngClass]="{'active': pagina=='verInventario'}">
+                <a class="nav-link" routerLink="/comerciante/verInventario">Inventario</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/comerciante/miPuesto">Mi puesto</a>
+            <li class="nav-item" [ngClass]="{'active': pagina=='miPuesto'}">
+                <a class="nav-link" routerLink="/comerciante/miPuesto">Mi puesto</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/comerciante/misEncargos">Mis encargos</a>
+            <li class="nav-item" [ngClass]="{'active': pagina=='misEncargos'}">
+                <a class="nav-link" routerLink="/comerciante/misEncargos">Mis encargos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Salir</a>

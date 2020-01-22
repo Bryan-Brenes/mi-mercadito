@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ComercianteService } from 'src/app/servicios/comerciante.service';
 
 @Component({
   selector: 'app-item-producto-comerciante',
@@ -10,10 +11,12 @@ export class ItemProductoComercianteComponent implements OnInit {
   @Input() comerciante: string;
   @Input() cantidad: string;
   @Input() estado: string;
+  @Input() idProducto: string;
+  @Input() idPedido: string;
 
   listo: boolean;
 
-  constructor() { }
+  constructor(private comercianteServicio: ComercianteService) { }
 
   ngOnInit() {
     if (this.estado == "listo") {
@@ -21,6 +24,15 @@ export class ItemProductoComercianteComponent implements OnInit {
     } else {
       this.listo = false;
     }
+  }
+
+  public cambiarEstadoProducto() {
+    console.log(`Estado: ${this.listo}`)
+    console.log(`idProducto: ${this.idProducto}`)
+    console.log(`idPedido: ${this.idPedido}`)
+    this.comercianteServicio.cambiarEstadoProducto(this.idProducto, this.idPedido).subscribe(data => {
+      console.log(data)
+    });
   }
 
 }

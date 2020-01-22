@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'comerciante', component: PerfilComercianteComponent },
   { path: 'cliente/verDetallePuesto/:id', component: VerDetallePuestoClienteComponent },
   { path: 'comerciante/verInventario', component: InventarioComercianteComponent },
-  { path: 'comerciante/verDescripcionProducto', component: DescripcionProductoComercianteComponent },
+  { path: 'comerciante/verDescripcionProducto/:id', component: DescripcionProductoComercianteComponent },
   { path: 'comerciante/agregarProducto', component: AgregarProductoComercianteComponent },
   { path: 'cliente/detalleCompra/:id', component: DetalleCompraClienteComponent },
   { path: 'comerciante/miPuesto', component: MiPuestoComercianteComponent },
@@ -56,8 +56,7 @@ const routes: Routes = [
   { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },
   { path: 'repartidor/detallesPedido/:id', component: DetallesPedidosRepartidorComponent },
   { path: 'comerciante/misEncargos', component: MisEncargosComponent },
-  { path: 'comerciante/detallesPedido', component: DetallePedidoComercianteComponent },
-
+  { path: 'comerciante/detallesPedido/:id', component: DetallePedidoComercianteComponent },
   { path: 'administrador/listaRepartidores', component: ListarepartidoresComponent },
   { path: 'administrador/agregarRepartidor', component: AgregarRepartidorComponent },
   { path: 'administrador/solicitudAfiliados', component: ListaSolAfiliadosComponent },

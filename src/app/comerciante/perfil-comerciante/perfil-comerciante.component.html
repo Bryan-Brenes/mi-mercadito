@@ -1,4 +1,4 @@
-<app-navbar-comerciante nombre={{nombre}}></app-navbar-comerciante>
+<app-navbar-comerciante nombre={{nombre}} pagina="perfil"></app-navbar-comerciante>
 <div class="contenedorPrincipal">
     <div class="container">
         <div class="row">
@@ -24,7 +24,11 @@
     <div class="container contenedorComentarios">
         <h3>Comentarios</h3>
         <div class="tabla">
-            <app-item-comentario nombre="Ronald  Fernández Gomez"
+            <li *ngFor="let comentario of comentarios" class="media comentario">
+                <app-item-comentario nombre={{comentario.nombre}} comentario={{comentario.comentario}}>
+                </app-item-comentario>
+            </li>
+            <!--<app-item-comentario nombre="Ronald  Fernández Gomez"
                 comentario="Los productos siempre se encuantran con gran calidad, muy frescos y a buen precio.">
             </app-item-comentario>
             <app-item-comentario nombre="Stephanie Delgado Brenes"
@@ -38,7 +42,7 @@
             </app-item-comentario>
             <app-item-comentario nombre="Stephanie Delgado Brenes"
                 comentario="Excelente servicio, muy rápido y con un buen precio.">
-            </app-item-comentario>
+            </app-item-comentario>-->
         </div>
     </div>
 </div>

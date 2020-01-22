@@ -11,10 +11,14 @@ export class ItemProductosComponent implements OnInit {
   @Input() subtitulo: string;
   @Input() precio: string;
   @Input() boton: string;
+  @Input() id: string;
+  @Input() ruta: string;
+
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

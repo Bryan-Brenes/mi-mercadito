@@ -1,4 +1,4 @@
-<app-navbar-comerciante nombre="Productos Fresquita"></app-navbar-comerciante>
+<app-navbar-comerciante nombre="{{nombre}}" pagina="miPuesto"></app-navbar-comerciante>
 
 <div class="contenedor">
     <div class="row">
@@ -9,31 +9,28 @@
             <h4>
                 Agregar producto a mi puesto
             </h4>
-            <form class="formulario" action="#">
-                <div class="row">
-                    <div class="form-group col-sm-11">
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto">
-                    </div>
+            <div class="formulario" action="#">
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="productoNuevo" type="text" class="form-control" placeholder="Agregar producto"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
                 </div>
-                <div class="row">
-                    <div class="form-group col-sm-11">
-                        <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
-                    </div>
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="cantidad" type="text" class="form-control" placeholder="Agregar la cantidad"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
                 </div>
-                <div class="row">
-                    <div class="form-group col-sm-11">
-                        <input type="text" class="form-control" id="montoxUnidad" placeholder="Monto por unidad">
-                    </div>
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="montokg" type="text" class="form-control" placeholder="Agregar monto por kg"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
                 </div>
-                <div class="row">
-                    <div class="form-group col-sm-11">
-                        <input type="text" class="form-control" id="montoxKg" placeholder="Monto por Kg">
-                    </div>
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="montounidad" type="text" class="form-control"
+                        placeholder="Agregar monto por unidad" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
                 </div>
 
-                <button type="button" onclick="window.location.href='comerciante/miPuesto'"
-                    class="btn btn-primario btn-comprar botonAgregar">Agregar</button>
-            </form>
+                <button (click)="enviarProducto()" class="btn btn-primario btn-comprar botonAgregar" type="button"
+                    id="button-addon2">Agregar</button>
+            </div>
         </div>
     </div>
 </div>

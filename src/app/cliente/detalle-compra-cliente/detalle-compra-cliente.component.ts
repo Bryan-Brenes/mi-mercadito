@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ClienteService } from 'src/app/servicios/cliente.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detalle-compra-cliente',
@@ -7,25 +9,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleCompraClienteComponent implements OnInit {
 
-  public itemes: Object[];
+  public itemes: any;
+  public total: any;
+  public subtotal: any;
+  public cargoEnvio: any;
+  public cargoServicio: any;
 
-  constructor() { }
+  constructor(private clienteService: ClienteService, private routes: ActivatedRoute) { }
 
   ngOnInit() {
-    this.itemes = this.getItemes();
+    this.getItemes();
+
   }
 
-  private getItemes(): Object[] {
-    var itemesCompra = [];
-    for (let i = 0; i < 10; i++) {
-      itemesCompra.push({
-        nombre: "Aguacate",
-        cantidad: 3,
-        precio: 2493
-      })
+  private getItemes() {
+    var id = this.routes.snapshot.paramMap.get('id');
+    this.clienteService.obtenerDetallePedido(id).subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      this.itemes = dato;
+      this.calcularMontos();
+    })
+  }
 
+  private calcularMontos() {
+    this.subtotal = 0;
+    this.total = 0;
+    for (let i = 0; i < this.itemes.length; i++) {
+      this.subtotal += this.itemes[i].monto;
     }
-    return itemesCompra;
+
+    this.total += this.subtotal;
+    if (this.itemes.direccion != undefined) {
+      this.cargoEnvio = this.subtotal * 0.04;
+      this.total += this.cargoEnvio;
+    }
+
+    this.cargoServicio = this.subtotal * 0.04;
+    this.total += this.cargoServicio;
+
   }
 
 }

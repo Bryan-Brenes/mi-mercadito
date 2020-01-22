@@ -28,4 +28,12 @@ export class ClienteService {
   public obtenerProductos() {
     return this.http.get(this.configService.url_base + 'productos');
   }
+
+  public obtenerPedidos(idCliente: string) {
+    return this.http.get(this.configService.url_base + 'pedidosCliente/' + idCliente)
+  }
+
+  public obtenerDetallePedido(id: string) {
+    return this.http.get(this.configService.url_base + `pedidosCliente/detalles/${id}`)
+  }
 }

@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'comerciante/verInventario', component: InventarioComercianteComponent },
   { path: 'comerciante/verDescripcionProducto', component: DescripcionProductoComercianteComponent },
   { path: 'comerciante/agregarProducto', component: AgregarProductoComercianteComponent },
-  { path: 'cliente/detalleCompra', component: DetalleCompraClienteComponent },
+  { path: 'cliente/detalleCompra/:id', component: DetalleCompraClienteComponent },
   { path: 'comerciante/miPuesto', component: MiPuestoComercianteComponent },
   { path: 'comerciante/agregarProductoMiPuesto', component: AgregarProductoMiPuestoComercianteComponent },
   { path: 'repartidor/pedidos', component: PedidosHacerRepartidorComponent },

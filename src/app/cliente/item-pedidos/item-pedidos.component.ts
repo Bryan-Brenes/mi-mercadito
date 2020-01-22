@@ -9,10 +9,13 @@ export class ItemPedidosComponent implements OnInit {
 
   @Input() fecha: string;
   @Input() monto: string;
+  @Input() ruta: string;
+  @Input() id: string;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.ruta)
   }
 
 }

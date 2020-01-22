@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ComercianteService } from 'src/app/servicios/comerciante.service';
+import { SesionComercianteService } from 'src/app/servicios/sesion-comerciante.service';
 
 @Component({
   selector: 'app-inventario-comerciante',
@@ -7,22 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventarioComercianteComponent implements OnInit {
 
-  nombre: string = "Productos Fresquita";
-  productos: Object[];
+  nombre: string;
+  productos: any;
 
-  constructor() { }
+  constructor(private comercianteService: ComercianteService, public sesionComerciante: SesionComercianteService) { }
 
   ngOnInit() {
-    this.productos = this.obtenerProductos();
+    this.obtenerProductos();
+    this.nombre = this.sesionComerciante.nombre;
   }
 
-  private obtenerProductos(): Object[] {
-    var productos = [];
-    for (let i = 0; i < 10; i++) {
-      productos.push({
-        nombre: "Tomate"
-      })
-    }
-    return productos;
+  private obtenerProductos() {
+    this.comercianteService.obtenerInventario(this.sesionComerciante.email).subscribe(data => {
+      var dato = JSON.parse(JSON.stringify(data));
+      this.productos = dato;
+      console.log(this.productos);
+    })
   }
 }

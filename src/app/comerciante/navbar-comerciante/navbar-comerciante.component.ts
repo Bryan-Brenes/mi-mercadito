@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavbarComercianteComponent implements OnInit {
 
   @Input() nombre: string;
+  @Input() pagina: string;
 
   constructor() { }
 

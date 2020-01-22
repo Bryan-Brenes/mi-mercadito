@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ComercianteService } from 'src/app/servicios/comerciante.service';
 
 @Component({
   selector: 'app-item-pedido-comerciante',
@@ -11,10 +12,13 @@ export class ItemPedidoComercianteComponent implements OnInit {
   @Input() nombre: string;
   @Input() enviar: string;
   @Input() estado: string;
+  @Input() ruta: string;
+  @Input() idpedido: string;
+
 
   public completado: boolean;
 
-  constructor() { }
+  constructor(private comercianteServicio: ComercianteService) { }
 
   ngOnInit() {
     if (this.estado == 'completado') {
@@ -22,6 +26,15 @@ export class ItemPedidoComercianteComponent implements OnInit {
     } else {
       this.completado = false;
     }
+    var fechaDate = new Date(this.fecha);
+    this.fecha = `${fechaDate.getDay()} / ${fechaDate.getMonth()} / ${fechaDate.getFullYear()}`;
+  }
+
+  public cambiarEstadoPedidoEntregado() {
+
+    this.comercianteServicio.cambiarEstadoPedidoEntregado(this.idpedido).subscribe(data => {
+      console.log(data)
+    });
   }
 
 }

@@ -1,17 +1,17 @@
-<app-navbar-comerciante nombre="Productos Fresquita"></app-navbar-comerciante>
+<app-navbar-comerciante nombre="{{nombre}}" pagina="verInventario"></app-navbar-comerciante>
 
 <div class="contenedor">
     <div class="row">
         <div class="contenedorImagen">
-            <img class="perfilImagen" src="../../../assets/tomate.png" alt="Producto" srcset="">
+            <img class="perfilImagen" src="../../../assets/user-default.png" alt="Producto" srcset="">
         </div>
         <div class="contenedorDescripcion">
-            <h2> Tomate</h2>
-            <h4> Los mejores tomates del mercado, siempre frescos y a si disposición.</h4>
+            <h2> {{producto}}</h2>
+            <h4> {{descripcion}}</h4>
         </div>
     </div>
-    <div class="container">
-        <button class="btn btn-primario btn-comprar botonActualizar">Actualizar</button>
-        <button class="btn btn-primario btn-comprar botonEliminar">Eliminar</button>
-    </div>
+    <!--<div class="container">
+        <button (click)="eliminarProducto()" class="btn btn-primario btn-comprar botonEliminar" type="button"
+            id="button-addon2">Eliminar</button>
+    </div>-->
 </div>

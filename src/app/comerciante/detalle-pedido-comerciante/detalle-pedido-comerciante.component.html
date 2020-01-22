@@ -1,4 +1,4 @@
-<app-navbar-comerciante nombre="Productos Fresquita"></app-navbar-comerciante>
+<app-navbar-comerciante nombre="{{nombreComerciante}}" pagina="misEncargos"></app-navbar-comerciante>
 <div class="contenedorPrincipal">
     <div class="container">
         <div class="row">
@@ -26,7 +26,15 @@
                     <div class="col-sm-3 col-4">Comerciante</div>
                     <div class="col-sm-2 col-3">Cantidad</div>
                 </div>
-                <div>
+                <div class="tabla">
+                    <app-item-producto-comerciante *ngFor="let detalle of pedido" producto="{{detalle.nombreproducto}}"
+                        comerciante="{{detalle.nombrecomerciante}}"
+                        cantidad="{{detalle.cantidadproducto + detalle.medicionproducto}}  "
+                        estado="{{detalle.estadoproducto == true ? 'listo':'no-listo'}}"
+                        idProducto="{{detalle.idproducto}}" idPedido="{{detalle.idpedido}}">
+                    </app-item-producto-comerciante>
+                </div>
+                <!--<div>
                     <app-item-producto-comerciante producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg"
                         estado="listo"></app-item-producto-comerciante>
                     <app-item-producto-comerciante producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg"
@@ -47,7 +55,7 @@
                         estado="listo"></app-item-producto-comerciante>
                     <app-item-producto-comerciante producto="Tomates" comerciante="Productos Fresquita" cantidad="2 kg"
                         estado="no-listo"></app-item-producto-comerciante>
-                </div>
+                </div>-->
             </div>
         </div>
 

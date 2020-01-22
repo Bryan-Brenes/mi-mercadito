@@ -1,4 +1,4 @@
-<app-navbar-comerciante nombre={{nombre}}></app-navbar-comerciante>
+<app-navbar-comerciante nombre={{nombre}} pagina="verInventario"></app-navbar-comerciante>
 
 <div class="contenedorPrincipal">
     <div class="container">
@@ -11,12 +11,12 @@
             </div>
         </div>
         <div>
-            <button class="btn btn-primario btn-comprar boton"
-                onclick="window.location.href='comerciante/agregarProducto'">Agregar</button>
+            <a routerLink='/comerciante/agregarProducto' class="btn btn-secundario boton">Agregar</a>
         </div>
         <div class="cuadricula">
             <app-item-productos style="width: 250px;" *ngFor="let producto of productos" titulo={{producto.nombre}}
-                subtitulo="" boton="Descripción"></app-item-productos>
+                subtitulo="" boton="Descripción" id="{{producto.id}}" ruta="/comerciante/verDescripcionProducto">
+            </app-item-productos>
         </div>
     </div>
 

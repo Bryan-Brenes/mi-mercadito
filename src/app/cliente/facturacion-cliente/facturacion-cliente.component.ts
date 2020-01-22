@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarritoService } from 'src/app/servicios/carrito.service';
 
 @Component({
   selector: 'app-facturacion-cliente',
@@ -7,25 +8,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacturacionClienteComponent implements OnInit {
 
-  public itemes: Object[];
+  public itemes: any;
+  public subtotal: any;
+  public cargoEnvio: any;
+  public cargoServicio: any;
+  public total: any;
 
-  constructor() { }
+  constructor(public carritoService: CarritoService) { }
 
   ngOnInit() {
-    this.itemes = this.getItemes();
+    this.getItemes();
+    this.calcularMontos();
+    this.registrarPedido();
   }
 
-  private getItemes(): Object[] {
-    var itemesCompra = [];
-    for (let i = 0; i < 10; i++) {
-      itemesCompra.push({
-        nombre: "Aguacate",
-        cantidad: 3,
-        precio: 2493
-      })
+  private registrarPedido() {
 
+  }
+
+  private getItemes() {
+    this.itemes = this.carritoService.productos;
+  }
+
+  private calcularMontos() {
+    this.subtotal = 0;
+    this.total = 0;
+    for (let i = 0; i < this.carritoService.productos.length; i++) {
+      this.subtotal += this.carritoService.productos[i].montokg;
     }
-    return itemesCompra;
+
+    this.total += this.subtotal;
+    if (this.carritoService.direccion != undefined) {
+      this.cargoEnvio = this.subtotal * 0.04;
+      this.total += this.cargoEnvio;
+    }
+
+    this.cargoServicio = this.subtotal * 0.04;
+    this.total += this.cargoServicio;
+
   }
 
 }

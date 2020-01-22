@@ -2,6 +2,7 @@ import { Component, OnInit, } from '@angular/core';
 import { LoginService } from 'src/app/servicios/login.service';
 import { SesionClienteService } from 'src/app/servicios/sesion-cliente.service';
 import { Router } from '@angular/router';
+import { SesionComercianteService } from 'src/app/servicios/sesion-comerciante.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   public email: string;
   public contrasenna: string;
 
-  constructor(private loginService: LoginService, private sesionCliente: SesionClienteService, private router: Router) { }
+  constructor(private loginService: LoginService, private sesionCliente: SesionClienteService, private router: Router, private sesionComerciante: SesionComercianteService) { }
 
   ngOnInit() {
   }
@@ -41,7 +42,15 @@ export class LoginComponent implements OnInit {
         } else if (dato.rol == 'repartidor') {
 
         } else if (dato.rol == 'comerciante') {
-
+          this.loginService.obtenerComerciante(this.email).subscribe(data => {
+            var info = data[0];
+            console.log(info)
+            this.sesionComerciante.email = info.id;
+            this.sesionComerciante.nombre = info.nombre;
+            this.sesionComerciante.telefono = info.telefono;
+            this.sesionComerciante.ubicacion = info.ubicacion;
+            this.router.navigateByUrl('comerciante');
+          })
         } else {
           console.log('no entra')
         }

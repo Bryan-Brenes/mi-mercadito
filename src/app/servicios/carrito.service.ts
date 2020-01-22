@@ -20,4 +20,12 @@ export class CarritoService {
   public agregarProducto(json: any) {
     this.productos.push(json);
   }
+
+  public agregarPedido(json: any) {
+    return this.http.post(this.configService.url_base + 'pedidos', json)
+  }
+
+  public agregarProductoPedido(json: any) {
+    return this.http.post(this.configService.url_base + 'detallePedido', json)
+  }
 }

@@ -1,24 +1,26 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-green">
-    <a class="navbar-brand" href="#">Mi mercadito</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" routerLink="/cliente">Mi mercadito</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item" [ngClass]="{'active': pagina == 'carrito'}">
-                <a class="nav-link" href="cliente/carrito">Carrito de Compras <span class="sr-only">(current)</span></a>
+                <a class="nav-link" routerLink="cliente/carrito">Carrito de Compras <span
+                        class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <i class="fas fa-chevron-right"></i>
             </li>
             <li class="nav-item" [ngClass]="{'active': pagina == 'metodoPago'}">
-                <a class="nav-link" href="cliente/metodoPago">Método de pago</a>
+                <a class="nav-link" routerLink="cliente/metodoPago">Método de pago</a>
             </li>
             <li class="nav-item">
                 <i class="fas fa-chevron-right"></i>
             </li>
             <li class="nav-item" [ngClass]="{'active': pagina == 'facturacion'}">
-                <a class="nav-link" href="cliente/facturacion">Facturación</a>
+                <a class="nav-link" routerLink="cliente/facturacion">Facturación</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Salir</a>

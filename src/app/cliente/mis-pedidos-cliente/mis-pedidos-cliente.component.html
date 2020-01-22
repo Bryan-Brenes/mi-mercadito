@@ -1,4 +1,4 @@
-<app-navbar-cliente nombre="Rodrigo Zúñiga" pagina="misPedidos"></app-navbar-cliente>
+<app-navbar-cliente nombre="{{nombre}}" pagina="misPedidos"></app-navbar-cliente>
 
 <div class="contenedor container">
     <div class="input-group mb-3">
@@ -14,7 +14,8 @@
         <!-- <div class="col-3 col-sm-2 alinear-derecha"><span><a href="#"><i class="fas fa-list-alt"></i></a></span></div> -->
     </div>
     <div class="lista-pedidos">
-        <app-item-pedidos *ngFor="let pedido of pedidos" fecha={{pedido.fecha}} monto={{pedido.monto}}>
+        <app-item-pedidos *ngFor="let pedido of pedidos" fecha={{pedido.fecha}} monto={{pedido.monto}}
+            ruta="/cliente/detalleCompra" id="{{pedido.idPedido}}">
         </app-item-pedidos>
     </div>
 
